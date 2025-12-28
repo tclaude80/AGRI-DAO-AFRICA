@@ -1,0 +1,641 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Filière & Producteurs"
+  description="KFTM Green accompagne les producteurs de banane plantain au Cameroun. Rejoignez notre réseau de partenaires pour une agriculture structurée et rémunératrice."
+>
+  <Header slot="header" currentPath="/filiere" />
+
+  <!-- Hero Banner -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="hero-content" data-aos="fade-up">
+        <span class="page-badge">Notre réseau</span>
+        <h1>Filière & Producteurs</h1>
+        <p>Structurer la filière plantain au Cameroun pour une agriculture durable et rémunératrice.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision Section -->
+  <section class="section">
+    <div class="container">
+      <div class="vision-grid">
+        <div class="vision-content" data-aos="fade-right">
+          <span class="section-badge">Notre approche</span>
+          <h2>Partenaires, pas fournisseurs</h2>
+          <p>
+            Chez KFTM Green, nous ne considérons pas les producteurs comme de simples
+            fournisseurs. Ce sont nos partenaires dans la valorisation de la banane
+            plantain camerounaise.
+          </p>
+          <p>
+            Nous travaillons main dans la main avec eux pour améliorer la qualité des
+            récoltes, garantir des revenus stables et construire ensemble une filière
+            structurée et pérenne.
+          </p>
+          <div class="vision-stats">
+            <div class="stat-item">
+              <span class="stat-value">+50</span>
+              <span class="stat-label">Producteurs partenaires</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">Kribi</span>
+              <span class="stat-label">Région d'implantation</span>
+            </div>
+          </div>
+        </div>
+        <div class="vision-image" data-aos="fade-left">
+          <img src="/images/producteurs-kftm.jpg" alt="Producteurs partenaires KFTM Green" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits for Producers -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="section-badge">Avantages</span>
+        <h2>Pourquoi devenir partenaire ?</h2>
+        <p>Les avantages de rejoindre le réseau KFTM Green.</p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="1" x2="12" y2="23"/>
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+          </div>
+          <h3>Revenus stables</h3>
+          <p>
+            Des prix garantis et des paiements réguliers. Nous achetons vos plantains
+            à un prix juste, négocié en transparence.
+          </p>
+        </div>
+
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+            </svg>
+          </div>
+          <h3>Formation</h3>
+          <p>
+            Accès à des formations sur les bonnes pratiques agricoles, la gestion
+            des récoltes et la qualité.
+          </p>
+        </div>
+
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3>Accompagnement</h3>
+          <p>
+            Un suivi personnalisé et un accompagnement technique tout au long
+            de l'année.
+          </p>
+        </div>
+
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+            </svg>
+          </div>
+          <h3>Débouché garanti</h3>
+          <p>
+            Toute votre production est achetée, même les plantains trop mûrs
+            ou hors calibre, normalement invendables.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="section-badge">Comment ça marche</span>
+        <h2>Rejoindre le réseau</h2>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="step-number">1</div>
+          <h4>Contact</h4>
+          <p>Prenez contact avec nous par téléphone, email ou via le formulaire.</p>
+        </div>
+
+        <div class="step-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="step-number">2</div>
+          <h4>Évaluation</h4>
+          <p>Nous visitons votre exploitation pour évaluer la qualité et les volumes.</p>
+        </div>
+
+        <div class="step-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="step-number">3</div>
+          <h4>Accord</h4>
+          <p>Nous définissons ensemble les conditions de partenariat (prix, volumes, calendrier).</p>
+        </div>
+
+        <div class="step-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="step-number">4</div>
+          <h4>Collecte</h4>
+          <p>Nous organisons la collecte régulière de vos récoltes selon le calendrier défini.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Requirements Section -->
+  <section class="section bg-gradient section-requirements">
+    <div class="container">
+      <div class="requirements-grid">
+        <div class="requirements-content" data-aos="fade-right">
+          <span class="section-badge section-badge-light">Critères</span>
+          <h2>Nos attentes</h2>
+          <p>
+            Pour garantir la qualité de nos produits, nous recherchons des producteurs
+            partageant nos valeurs et nos exigences.
+          </p>
+
+          <ul class="requirements-list">
+            <li>
+              <strong>Qualité</strong>
+              Engagement à respecter les bonnes pratiques agricoles
+            </li>
+            <li>
+              <strong>Régularité</strong>
+              Capacité à fournir des volumes réguliers
+            </li>
+            <li>
+              <strong>Transparence</strong>
+              Ouverture aux visites et au suivi qualité
+            </li>
+            <li>
+              <strong>Durabilité</strong>
+              Sensibilité aux enjeux environnementaux
+            </li>
+          </ul>
+        </div>
+
+        <div class="requirements-visual" data-aos="fade-left">
+          <div class="requirements-card">
+            <h3>Vous êtes producteur ?</h3>
+            <p>
+              Que vous ayez une petite exploitation familiale ou une plantation
+              plus importante, nous sommes intéressés par votre production.
+            </p>
+            <a href="/contact?type=producteur" class="btn btn-accent">Nous contacter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="section-badge">Témoignages</span>
+        <h2>Ils ont rejoint le réseau</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial-content">
+            <p>
+              "Avant KFTM Green, je perdais une bonne partie de ma récolte faute d'acheteurs.
+              Maintenant, tout est acheté à un prix correct. C'est une vraie sécurité pour ma famille."
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">P</div>
+            <div>
+              <span class="author-name">Producteur à Kribi</span>
+              <span class="author-role">Partenaire depuis 2021</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonial-content">
+            <p>
+              "Les formations m'ont permis d'améliorer mes rendements. Et surtout, je sais
+              que mes plantains sont transformés en produits de qualité. C'est une fierté."
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">A</div>
+            <div>
+              <span class="author-name">Agricultrice</span>
+              <span class="author-role">Partenaire depuis 2022</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="cta-box" data-aos="fade-up">
+        <h2>Rejoignez le réseau KFTM Green</h2>
+        <p>Producteur de banane plantain dans la région de Kribi ? Parlons de notre collaboration.</p>
+        <div class="cta-buttons">
+          <a href="/contact?type=producteur" class="btn btn-primary btn-lg">Devenir partenaire</a>
+          <a href="tel:+237654397450" class="btn btn-secondary btn-lg">Appeler maintenant</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</BaseLayout>
+
+<style>
+  /* Page Hero */
+  .page-hero {
+    padding: calc(100px + var(--spacing-4xl)) 0 var(--spacing-4xl);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    color: var(--color-white);
+  }
+
+  .page-badge {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-md);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .page-hero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-white);
+  }
+
+  .page-hero p {
+    font-size: var(--text-xl);
+    opacity: 0.9;
+    max-width: 600px;
+  }
+
+  /* Section Badge */
+  .section-badge {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-md);
+    background: rgba(76, 175, 80, 0.1);
+    color: var(--color-primary);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .section-badge-light {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--color-white);
+  }
+
+  /* Vision Grid */
+  .vision-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+  }
+
+  @media (min-width: 992px) {
+    .vision-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .vision-content h2 {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .vision-content p {
+    color: var(--color-gray-600);
+    line-height: 1.8;
+  }
+
+  .vision-stats {
+    display: flex;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
+  }
+
+  .stat-item {
+    text-align: center;
+    padding: var(--spacing-lg);
+    background: var(--color-off-white);
+    border-radius: var(--radius-lg);
+  }
+
+  .stat-value {
+    display: block;
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    font-family: var(--font-secondary);
+    color: var(--color-primary);
+  }
+
+  .stat-label {
+    font-size: var(--text-sm);
+    color: var(--color-gray-600);
+  }
+
+  .vision-image img {
+    width: 100%;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
+  }
+
+  /* Benefits Grid */
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  @media (min-width: 576px) {
+    .benefits-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 992px) {
+    .benefits-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .benefit-card {
+    text-align: center;
+    padding: var(--spacing-xl);
+    background: var(--color-white);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+  }
+
+  .benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .benefit-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    border-radius: 50%;
+    color: var(--color-white);
+  }
+
+  .benefit-icon svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .benefit-card h3 {
+    font-size: var(--text-lg);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .benefit-card p {
+    color: var(--color-gray-600);
+    font-size: var(--text-sm);
+    margin: 0;
+  }
+
+  /* Steps Grid */
+  .steps-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  @media (min-width: 576px) {
+    .steps-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 992px) {
+    .steps-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .step-card {
+    text-align: center;
+    padding: var(--spacing-xl);
+    background: var(--color-white);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    position: relative;
+  }
+
+  .step-number {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-family: var(--font-secondary);
+    box-shadow: var(--shadow-md);
+  }
+
+  .step-card h4 {
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .step-card p {
+    color: var(--color-gray-600);
+    font-size: var(--text-sm);
+    margin: 0;
+  }
+
+  /* Requirements Section */
+  .section-requirements {
+    color: var(--color-white);
+  }
+
+  .requirements-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+  }
+
+  @media (min-width: 992px) {
+    .requirements-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .requirements-content h2 {
+    color: var(--color-white);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .requirements-content > p {
+    opacity: 0.9;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .requirements-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .requirements-list li {
+    padding: var(--spacing-md);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .requirements-list li strong {
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .requirements-card {
+    background: var(--color-white);
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-xl);
+    text-align: center;
+    color: var(--color-gray-800);
+  }
+
+  .requirements-card h3 {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .requirements-card p {
+    color: var(--color-gray-600);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  /* Testimonials */
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 768px) {
+    .testimonials-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .testimonial-card {
+    background: var(--color-white);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+  }
+
+  .testimonial-content p {
+    font-style: italic;
+    color: var(--color-gray-700);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+  }
+
+  .author-avatar {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: var(--text-xl);
+  }
+
+  .author-name {
+    display: block;
+    font-weight: 600;
+    color: var(--color-gray-800);
+  }
+
+  .author-role {
+    font-size: var(--text-sm);
+    color: var(--color-gray-500);
+  }
+
+  /* CTA Box */
+  .cta-box {
+    background: var(--color-white);
+    padding: var(--spacing-3xl);
+    border-radius: var(--radius-xl);
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .cta-box h2 {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .cta-box > p {
+    color: var(--color-gray-600);
+    max-width: 600px;
+    margin: 0 auto var(--spacing-xl);
+  }
+
+  .cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-md);
+  }
+</style>

@@ -1,0 +1,465 @@
+---
+interface Props {
+  currentPath?: string;
+}
+
+const { currentPath = '/' } = Astro.props;
+
+const navItems = [
+  { href: '/', label: 'Accueil' },
+  { href: '/a-propos', label: 'À propos' },
+  { href: '/produits', label: 'Produits' },
+  { href: '/process-qualite', label: 'Process & Qualité' },
+  { href: '/durabilite', label: 'Durabilité' },
+  { href: '/tracabilite', label: 'Traçabilité' },
+  { href: '/filiere', label: 'Filière' },
+  { href: '/export', label: 'Export' },
+  { href: '/bourse-plantain', label: 'Bourse du Plantain' },
+  { href: '/contact', label: 'Contact' }
+];
+---
+
+<header class="header" id="header">
+  <div class="container">
+    <div class="header-inner">
+      <!-- Logo -->
+      <a href="/" class="logo" aria-label="KFTM Green - Accueil">
+        <div class="logo-icon">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="30" cy="30" r="28" fill="url(#logoGradient)"/>
+            <path d="M30 12c-4 8-2 16 4 22 2-8 1-16-4-22z" fill="#fff" opacity="0.9"/>
+            <path d="M22 18c0 10 4 18 12 22-2-10-4-18-12-22z" fill="#fff" opacity="0.7"/>
+            <path d="M38 20c-2 8 0 16 6 20-1-8-2-14-6-20z" fill="#fff" opacity="0.8"/>
+            <defs>
+              <linearGradient id="logoGradient" x1="0" y1="0" x2="60" y2="60">
+                <stop offset="0%" stop-color="#4CAF50"/>
+                <stop offset="100%" stop-color="#8BC34A"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">KFTM Green</span>
+          <span class="logo-tagline">Healthy Living, Healthy Farming</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Navigation principale">
+        <ul class="nav-list">
+          {navItems.slice(0, 6).map((item) => (
+            <li>
+              <a
+                href={item.href}
+                class:list={['nav-link', { active: currentPath === item.href }]}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+          <li class="nav-dropdown">
+            <button class="nav-link dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+              Plus
+              <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              </svg>
+            </button>
+            <ul class="dropdown-menu">
+              {navItems.slice(6).map((item) => (
+                <li>
+                  <a href={item.href} class:list={['dropdown-link', { active: currentPath === item.href }]}>
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- CTA Button -->
+      <a href="/contact" class="btn btn-primary header-cta">Nous contacter</a>
+
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-btn" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <button class="mobile-menu-close" aria-label="Fermer le menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+
+      <nav class="mobile-nav" aria-label="Navigation mobile">
+        <ul>
+          {navItems.map((item) => (
+            <li>
+              <a
+                href={item.href}
+                class:list={['mobile-nav-link', { active: currentPath === item.href }]}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      <a href="/contact" class="btn btn-primary btn-lg mobile-cta">Nous contacter</a>
+
+      <div class="mobile-contact">
+        <p><strong>Téléphone:</strong> +237 654 39 74 50</p>
+        <p><strong>Email:</strong> infos@kftmgreen.cm</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<style>
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all var(--transition-base);
+  }
+
+  .header.scrolled {
+    box-shadow: var(--shadow-md);
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-md) 0;
+    gap: var(--spacing-lg);
+  }
+
+  /* Logo */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+
+  .logo-icon svg {
+    width: 48px;
+    height: 48px;
+  }
+
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo-name {
+    font-family: var(--font-secondary);
+    font-size: var(--text-xl);
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    line-height: 1.1;
+  }
+
+  .logo-tagline {
+    font-size: var(--text-xs);
+    color: var(--color-gray-600);
+    font-style: italic;
+  }
+
+  /* Desktop Navigation */
+  .nav-desktop {
+    display: none;
+  }
+
+  @media (min-width: 1024px) {
+    .nav-desktop {
+      display: block;
+    }
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--color-gray-700);
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    color: var(--color-primary);
+    background: rgba(76, 175, 80, 0.1);
+  }
+
+  /* Dropdown */
+  .nav-dropdown {
+    position: relative;
+  }
+
+  .dropdown-icon {
+    transition: transform var(--transition-fast);
+  }
+
+  .nav-dropdown:hover .dropdown-icon,
+  .dropdown-trigger[aria-expanded="true"] .dropdown-icon {
+    transform: rotate(180deg);
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 200px;
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    padding: var(--spacing-sm);
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all var(--transition-fast);
+  }
+
+  .nav-dropdown:hover .dropdown-menu,
+  .dropdown-trigger[aria-expanded="true"] + .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .dropdown-link {
+    display: block;
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--text-sm);
+    color: var(--color-gray-700);
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+  }
+
+  .dropdown-link:hover,
+  .dropdown-link.active {
+    color: var(--color-primary);
+    background: rgba(76, 175, 80, 0.1);
+  }
+
+  /* Header CTA */
+  .header-cta {
+    display: none;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    font-size: var(--text-sm);
+  }
+
+  @media (min-width: 1024px) {
+    .header-cta {
+      display: inline-flex;
+    }
+  }
+
+  /* Mobile Menu Button */
+  .mobile-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  @media (min-width: 1024px) {
+    .mobile-menu-btn {
+      display: none;
+    }
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 24px;
+  }
+
+  .hamburger span {
+    display: block;
+    height: 2px;
+    background: var(--color-gray-800);
+    border-radius: 2px;
+    transition: all var(--transition-fast);
+  }
+
+  .hamburger span:nth-child(1) { width: 100%; }
+  .hamburger span:nth-child(2) { width: 80%; }
+  .hamburger span:nth-child(3) { width: 60%; }
+
+  .mobile-menu-btn:hover .hamburger span {
+    width: 100%;
+  }
+
+  /* Mobile Menu */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-base);
+  }
+
+  .mobile-menu.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .mobile-menu-inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: min(320px, 85vw);
+    height: 100%;
+    background: var(--color-white);
+    padding: var(--spacing-xl);
+    transform: translateX(100%);
+    transition: transform var(--transition-base);
+    overflow-y: auto;
+  }
+
+  .mobile-menu.active .mobile-menu-inner {
+    transform: translateX(0);
+  }
+
+  .mobile-menu-close {
+    position: absolute;
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-gray-600);
+    transition: color var(--transition-fast);
+  }
+
+  .mobile-menu-close:hover {
+    color: var(--color-gray-900);
+  }
+
+  .mobile-nav {
+    margin-top: var(--spacing-3xl);
+  }
+
+  .mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mobile-nav-link {
+    display: block;
+    padding: var(--spacing-md) 0;
+    font-size: var(--text-lg);
+    font-weight: 500;
+    color: var(--color-gray-700);
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-gray-200);
+    transition: all var(--transition-fast);
+  }
+
+  .mobile-nav-link:hover,
+  .mobile-nav-link.active {
+    color: var(--color-primary);
+  }
+
+  .mobile-cta {
+    display: block;
+    width: 100%;
+    margin-top: var(--spacing-xl);
+    text-align: center;
+  }
+
+  .mobile-contact {
+    margin-top: var(--spacing-xl);
+    padding-top: var(--spacing-xl);
+    border-top: 1px solid var(--color-gray-200);
+    color: var(--color-gray-600);
+    font-size: var(--text-sm);
+  }
+
+  .mobile-contact p {
+    margin-bottom: var(--spacing-sm);
+  }
+</style>
+
+<script>
+  // Header scroll effect
+  const header = document.getElementById('header');
+  let lastScroll = 0;
+
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+
+    if (currentScroll > 50) {
+      header?.classList.add('scrolled');
+    } else {
+      header?.classList.remove('scrolled');
+    }
+
+    lastScroll = currentScroll;
+  });
+
+  // Dropdown keyboard navigation
+  const dropdownTrigger = document.querySelector('.dropdown-trigger');
+  if (dropdownTrigger) {
+    dropdownTrigger.addEventListener('click', () => {
+      const expanded = dropdownTrigger.getAttribute('aria-expanded') === 'true';
+      dropdownTrigger.setAttribute('aria-expanded', (!expanded).toString());
+    });
+  }
+</script>

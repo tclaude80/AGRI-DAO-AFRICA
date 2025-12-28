@@ -1,0 +1,1240 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Accueil">
+  <Header slot="header" currentPath="/" />
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-badge" data-aos="fade-down">Depuis 2019 - Kribi, Cameroun</span>
+        <h1 data-aos="fade-up" data-aos-delay="100">
+          Transformons ensemble<br>
+          <span class="text-gradient">la banane plantain</span>
+        </h1>
+        <p class="hero-text" data-aos="fade-up" data-aos-delay="200">
+          KFTM Green valorise la banane plantain camerounaise en produits alimentaires
+          de qualité : farine nutritive, biscuits savoureux et bien plus.
+          <strong>Healthy Living, Healthy Farming.</strong>
+        </p>
+        <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
+          <a href="/produits" class="btn btn-primary btn-lg">Découvrir nos produits</a>
+          <a href="/contact" class="btn btn-secondary btn-lg">Devenir partenaire</a>
+        </div>
+        <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+          <div class="stat">
+            <span class="stat-number" data-count="2019">2019</span>
+            <span class="stat-label">Année de création</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-count="100">100%</span>
+            <span class="stat-label">Naturel</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">Kribi</span>
+            <span class="stat-label">Cameroun</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <a href="#about" aria-label="Défiler vers le bas">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section bg-light" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content" data-aos="fade-right">
+          <span class="section-badge">Notre histoire</span>
+          <h2>Une vision née de la passion pour notre terroir</h2>
+          <p>
+            Fondée en 2019 à Kribi par <strong>M. AWONO Landry Gaëtan</strong> et
+            <strong>Dr. Claude TCHONKO</strong>, KFTM Green SARL est née d'une conviction :
+            le Cameroun possède un trésor agricole sous-exploité dans la banane plantain.
+          </p>
+          <p>
+            Notre mission est de transformer ce produit local en denrées alimentaires
+            de haute qualité, tout en soutenant les producteurs locaux et en adoptant
+            des pratiques durables pour réduire le gaspillage alimentaire.
+          </p>
+          <div class="about-features">
+            <div class="feature">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <div>
+                <h4>Qualité garantie</h4>
+                <p>Contrôle rigoureux à chaque étape</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M12 6v6l4 2"/>
+                </svg>
+              </div>
+              <div>
+                <h4>Traçabilité</h4>
+                <p>De la ferme à votre table</p>
+              </div>
+            </div>
+          </div>
+          <a href="/a-propos" class="btn btn-primary">En savoir plus</a>
+        </div>
+        <div class="about-image" data-aos="fade-left">
+          <div class="image-wrapper">
+            <img src="/images/plantation-kftm.jpg" alt="Plantation de bananes plantains KFTM Green au Cameroun" loading="lazy">
+            <div class="image-badge">
+              <span class="badge-number">+5</span>
+              <span class="badge-text">Années d'expérience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="section" id="products">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="section-badge">Nos produits</span>
+        <h2>Des produits 100% naturels</h2>
+        <p>
+          Découvrez notre gamme de produits à base de banane plantain,
+          élaborés avec soin pour votre santé et votre plaisir.
+        </p>
+      </div>
+
+      <div class="products-grid">
+        <!-- Product 1: Farine Mère Anto -->
+        <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="product-image">
+            <img src="/images/farine-mere-anto.jpg" alt="Farine de banane plantain Mère Anto KFTM Green" loading="lazy">
+            <div class="product-badges">
+              <span class="badge badge-green">Sans Gluten</span>
+              <span class="badge badge-gold">Premium</span>
+            </div>
+          </div>
+          <div class="product-content">
+            <h3>Farine de Plantain<br><span class="brand-name">"Mère Anto"</span></h3>
+            <p>
+              Notre farine de banane plantain 100% naturelle, sans additifs ni gluten.
+              Idéale pour la pâtisserie, les bouillies et les préparations culinaires.
+            </p>
+            <ul class="product-features">
+              <li>100% banane plantain</li>
+              <li>Sans gluten certifié</li>
+              <li>Riche en fibres</li>
+              <li>Format 1kg</li>
+            </ul>
+            <a href="/produits#farine" class="btn btn-primary">Découvrir</a>
+          </div>
+        </div>
+
+        <!-- Product 2: Croquant de Plantain -->
+        <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="product-image">
+            <img src="/images/croquant-plantain.jpg" alt="Croquant de Plantain biscuit KFTM Green" loading="lazy">
+            <div class="product-badges">
+              <span class="badge badge-green">Artisanal</span>
+            </div>
+          </div>
+          <div class="product-content">
+            <h3>Croquant de Plantain<br><span class="brand-name">Biscuit Nature</span></h3>
+            <p>
+              Biscuits croustillants à base de farine de plantain.
+              Un snack sain et délicieux pour toute la famille.
+            </p>
+            <ul class="product-features">
+              <li>Base de farine de plantain</li>
+              <li>Sans conservateurs</li>
+              <li>Croustillant naturel</li>
+              <li>Format 500g</li>
+            </ul>
+            <a href="/produits#biscuits" class="btn btn-primary">Découvrir</a>
+          </div>
+        </div>
+
+        <!-- Product 3: Croquant Choco -->
+        <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="product-image">
+            <img src="/images/croquant-choco.jpg" alt="Croquant de Plantain Choco biscuit KFTM Green" loading="lazy">
+            <div class="product-badges">
+              <span class="badge badge-brown">Chocolat</span>
+              <span class="badge badge-green">Nouveau</span>
+            </div>
+          </div>
+          <div class="product-content">
+            <h3>Croquant de Plantain<br><span class="brand-name">Choco</span></h3>
+            <p>
+              La gourmandise rencontre la nutrition ! Nos biscuits au chocolat
+              allient le goût unique du plantain au plaisir du cacao.
+            </p>
+            <ul class="product-features">
+              <li>Farine de plantain + cacao</li>
+              <li>Goût chocolaté</li>
+              <li>Idéal pour le goûter</li>
+              <li>Format 500g</li>
+            </ul>
+            <a href="/produits#biscuits-choco" class="btn btn-primary">Découvrir</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="products-cta text-center mt-xl" data-aos="fade-up">
+        <a href="/produits" class="btn btn-secondary btn-lg">Voir tous nos produits</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="section section-process bg-gradient">
+    <div class="container">
+      <div class="section-title text-white" data-aos="fade-up">
+        <span class="section-badge section-badge-light">Notre process</span>
+        <h2>De la ferme au produit fini</h2>
+        <p>Un processus rigoureux pour garantir qualité et traçabilité.</p>
+      </div>
+
+      <div class="process-timeline">
+        <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Sélection</h3>
+            <p>Partenariat avec les producteurs locaux de Kribi. Sélection rigoureuse des bananes plantains à maturité optimale.</p>
+          </div>
+        </div>
+
+        <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>Transformation</h3>
+            <p>Épluchage, découpe et séchage dans des conditions d'hygiène strictes. Broyage en farine fine.</p>
+          </div>
+        </div>
+
+        <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Contrôle Qualité</h3>
+            <p>Tests de qualité à chaque étape. Vérification des paramètres nutritionnels et sanitaires.</p>
+          </div>
+        </div>
+
+        <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h3>Conditionnement</h3>
+            <p>Emballage hermétique pour préserver la fraîcheur. Étiquetage conforme aux normes.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="process-cta text-center mt-xl" data-aos="fade-up">
+        <a href="/process-qualite" class="btn btn-accent btn-lg">En savoir plus sur notre process</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sustainability Section -->
+  <section class="section" id="sustainability">
+    <div class="container">
+      <div class="sustainability-grid">
+        <div class="sustainability-content" data-aos="fade-right">
+          <span class="section-badge">Engagement durable</span>
+          <h2>Pour une agriculture responsable</h2>
+          <p>
+            Chez KFTM Green, la durabilité n'est pas un mot à la mode, c'est notre ADN.
+            Nous nous engageons à valoriser chaque partie de la banane plantain et à
+            minimiser notre empreinte environnementale.
+          </p>
+
+          <div class="sustainability-stats">
+            <div class="sust-stat" data-aos="fade-up" data-aos-delay="100">
+              <div class="sust-stat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                  <line x1="12" y1="22.08" x2="12" y2="12"/>
+                </svg>
+              </div>
+              <h4>Zéro gaspillage</h4>
+              <p>Valorisation de toutes les parties du fruit</p>
+            </div>
+
+            <div class="sust-stat" data-aos="fade-up" data-aos-delay="200">
+              <div class="sust-stat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                  <path d="M2 12h20"/>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+              </div>
+              <h4>Impact local</h4>
+              <p>Soutien aux producteurs de la région</p>
+            </div>
+
+            <div class="sust-stat" data-aos="fade-up" data-aos-delay="300">
+              <div class="sust-stat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                  <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+              </div>
+              <h4>R&D continue</h4>
+              <p>Innovation pour de nouveaux produits</p>
+            </div>
+          </div>
+
+          <a href="/durabilite" class="btn btn-primary">Découvrir nos engagements</a>
+        </div>
+
+        <div class="sustainability-images" data-aos="fade-left">
+          <div class="image-grid">
+            <img src="/images/office-kftm.jpg" alt="Bureau KFTM Green à Kribi" class="img-1" loading="lazy">
+            <img src="/images/team-kftm.jpg" alt="Équipe KFTM Green" class="img-2" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Innovation Section -->
+  <section class="section bg-light" id="innovation">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="section-badge">Innovation</span>
+        <h2>Traçabilité & Technologies</h2>
+        <p>
+          Nous investissons dans les technologies de demain pour garantir
+          la traçabilité complète de nos produits.
+        </p>
+      </div>
+
+      <div class="innovation-grid">
+        <div class="innovation-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="innovation-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+              <line x1="1" y1="10" x2="23" y2="10"/>
+            </svg>
+          </div>
+          <h3>Traçabilité numérique</h3>
+          <p>Suivi de chaque lot depuis la plantation jusqu'au produit fini grâce à des systèmes numériques modernes.</p>
+        </div>
+
+        <div class="innovation-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="innovation-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+            </svg>
+          </div>
+          <h3>Blockchain en perspective</h3>
+          <p>Développement d'une solution blockchain pour une transparence totale sur l'origine de nos produits.</p>
+        </div>
+
+        <div class="innovation-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="innovation-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+              <polyline points="2 17 12 22 22 17"/>
+              <polyline points="2 12 12 17 22 12"/>
+            </svg>
+          </div>
+          <h3>R&D permanente</h3>
+          <p>Notre équipe R&D travaille continuellement à l'amélioration de nos process et au développement de nouveaux produits.</p>
+        </div>
+      </div>
+
+      <div class="innovation-cta text-center mt-xl" data-aos="fade-up">
+        <a href="/tracabilite" class="btn btn-primary">En savoir plus</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section section-gallery">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="section-badge">Galerie</span>
+        <h2>Nos installations</h2>
+        <p>Découvrez nos plantations et notre unité de transformation.</p>
+      </div>
+
+      <div class="gallery-grid" data-aos="fade-up">
+        <div class="gallery-item gallery-item-large">
+          <img src="/images/plantation-1.jpg" alt="Vue de la plantation KFTM Green" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="/images/office-interior.jpg" alt="Intérieur du bureau KFTM Green" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="/images/products-display.jpg" alt="Gamme de produits KFTM Green" loading="lazy">
+        </div>
+        <div class="gallery-item gallery-item-wide">
+          <img src="/images/team-plantation.jpg" alt="Équipe KFTM Green dans la plantation" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bourse du Plantain Teaser -->
+  <section class="section section-bourse bg-gradient">
+    <div class="container">
+      <div class="bourse-content text-center" data-aos="fade-up">
+        <span class="section-badge section-badge-light">Bientôt disponible</span>
+        <h2>La Bourse du Plantain</h2>
+        <p class="bourse-text">
+          Notre vision : créer une plateforme de mise en relation entre producteurs,
+          transformateurs et acheteurs pour structurer la filière plantain au Cameroun
+          et en Afrique Centrale.
+        </p>
+        <div class="bourse-features">
+          <div class="bourse-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+            <span>Mise en relation</span>
+          </div>
+          <div class="bourse-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="1" x2="12" y2="23"/>
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+            <span>Prix justes</span>
+          </div>
+          <div class="bourse-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+              <polyline points="10 9 9 9 8 9"/>
+            </svg>
+            <span>Traçabilité</span>
+          </div>
+        </div>
+        <a href="/bourse-plantain" class="btn btn-accent btn-lg">En savoir plus</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="section section-cta">
+    <div class="container">
+      <div class="cta-content" data-aos="fade-up">
+        <h2>Prêt à collaborer avec nous ?</h2>
+        <p>
+          Que vous soyez distributeur, importateur, ou producteur de plantain,
+          contactez-nous pour explorer les opportunités de partenariat.
+        </p>
+        <div class="cta-buttons">
+          <a href="/contact" class="btn btn-primary btn-lg">Nous contacter</a>
+          <a href="/export" class="btn btn-secondary btn-lg">Export & Partenariats</a>
+        </div>
+        <div class="cta-contact">
+          <a href="tel:+237654397450">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+            </svg>
+            +237 654 39 74 50
+          </a>
+          <a href="mailto:infos@kftmgreen.cm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            infos@kftmgreen.cm
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</BaseLayout>
+
+<style>
+  /* Hero Section */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: calc(80px + var(--spacing-4xl)) 0 var(--spacing-4xl);
+    overflow: hidden;
+  }
+
+  .hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/images/hero-plantation.jpg') center/cover no-repeat;
+    z-index: -2;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(76, 175, 80, 0.9) 0%,
+      rgba(56, 142, 60, 0.85) 50%,
+      rgba(46, 125, 50, 0.9) 100%
+    );
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    color: var(--color-white);
+  }
+
+  .hero-badge {
+    display: inline-block;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    margin-bottom: var(--spacing-lg);
+    backdrop-filter: blur(10px);
+  }
+
+  .hero h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-white);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, var(--color-accent) 0%, #FFE082 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-text {
+    font-size: var(--text-xl);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-xl);
+    opacity: 0.95;
+  }
+
+  .hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  .hero-cta .btn-secondary {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: var(--color-white);
+    color: var(--color-white);
+    backdrop-filter: blur(10px);
+  }
+
+  .hero-cta .btn-secondary:hover {
+    background: var(--color-white);
+    color: var(--color-primary);
+  }
+
+  .hero-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-2xl);
+  }
+
+  .stat {
+    text-align: left;
+  }
+
+  .stat-number {
+    display: block;
+    font-size: var(--text-3xl);
+    font-weight: 700;
+    font-family: var(--font-secondary);
+  }
+
+  .stat-label {
+    font-size: var(--text-sm);
+    opacity: 0.8;
+  }
+
+  .hero-scroll {
+    position: absolute;
+    bottom: var(--spacing-xl);
+    left: 50%;
+    transform: translateX(-50%);
+    animation: float 2s ease-in-out infinite;
+  }
+
+  .hero-scroll a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    color: var(--color-white);
+    backdrop-filter: blur(10px);
+    transition: all var(--transition-base);
+  }
+
+  .hero-scroll a:hover {
+    background: var(--color-white);
+    color: var(--color-primary);
+  }
+
+  /* About Section */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+  }
+
+  @media (min-width: 992px) {
+    .about-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .section-badge {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-md);
+    background: rgba(76, 175, 80, 0.1);
+    color: var(--color-primary);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .section-badge-light {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--color-white);
+  }
+
+  .about-content h2 {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .about-content p {
+    color: var(--color-gray-600);
+    line-height: 1.8;
+  }
+
+  .about-features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    margin: var(--spacing-xl) 0;
+  }
+
+  @media (min-width: 576px) {
+    .about-features {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .feature {
+    display: flex;
+    gap: var(--spacing-md);
+  }
+
+  .feature-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    border-radius: var(--radius-md);
+    color: var(--color-white);
+  }
+
+  .feature-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .feature h4 {
+    font-size: var(--text-base);
+    margin-bottom: 4px;
+  }
+
+  .feature p {
+    font-size: var(--text-sm);
+    color: var(--color-gray-500);
+    margin: 0;
+  }
+
+  .about-image {
+    position: relative;
+  }
+
+  .image-wrapper {
+    position: relative;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+  }
+
+  .image-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+
+  .image-badge {
+    position: absolute;
+    bottom: var(--spacing-lg);
+    right: var(--spacing-lg);
+    background: var(--color-white);
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+  }
+
+  .badge-number {
+    display: block;
+    font-size: var(--text-3xl);
+    font-weight: 700;
+    color: var(--color-primary);
+    font-family: var(--font-secondary);
+  }
+
+  .badge-text {
+    font-size: var(--text-sm);
+    color: var(--color-gray-600);
+  }
+
+  /* Products Section */
+  .products-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  @media (min-width: 768px) {
+    .products-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .products-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .product-card {
+    background: var(--color-white);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+  }
+
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .product-image {
+    position: relative;
+    height: 250px;
+    background: linear-gradient(135deg, var(--color-primary-light), var(--color-secondary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .product-badges {
+    position: absolute;
+    top: var(--spacing-md);
+    left: var(--spacing-md);
+    display: flex;
+    gap: var(--spacing-sm);
+  }
+
+  .badge {
+    padding: 4px 12px;
+    font-size: var(--text-xs);
+    font-weight: 600;
+    border-radius: var(--radius-full);
+  }
+
+  .badge-green {
+    background: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  .badge-gold {
+    background: var(--color-accent);
+    color: var(--color-gray-900);
+  }
+
+  .badge-brown {
+    background: var(--color-earth);
+    color: var(--color-white);
+  }
+
+  .product-content {
+    padding: var(--spacing-xl);
+  }
+
+  .product-content h3 {
+    font-size: var(--text-xl);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.3;
+  }
+
+  .brand-name {
+    color: var(--color-primary);
+    font-style: italic;
+  }
+
+  .product-content > p {
+    color: var(--color-gray-600);
+    margin-bottom: var(--spacing-md);
+    font-size: var(--text-sm);
+  }
+
+  .product-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--spacing-lg);
+  }
+
+  .product-features li {
+    position: relative;
+    padding-left: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--text-sm);
+    color: var(--color-gray-600);
+  }
+
+  .product-features li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    background: var(--color-primary);
+    border-radius: 50%;
+  }
+
+  /* Process Section */
+  .section-process {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .section-process .section-title h2,
+  .section-process .section-title p {
+    color: var(--color-white);
+  }
+
+  .process-timeline {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  @media (min-width: 768px) {
+    .process-timeline {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .process-timeline {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .process-step {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-xl);
+    text-align: center;
+    transition: all var(--transition-base);
+  }
+
+  .process-step:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+  }
+
+  .step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: var(--color-accent);
+    color: var(--color-gray-900);
+    border-radius: 50%;
+    font-size: var(--text-xl);
+    font-weight: 700;
+    font-family: var(--font-secondary);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .step-content h3 {
+    color: var(--color-white);
+    font-size: var(--text-lg);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .step-content p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: var(--text-sm);
+    margin: 0;
+  }
+
+  /* Sustainability Section */
+  .sustainability-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+  }
+
+  @media (min-width: 992px) {
+    .sustainability-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .sustainability-stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    margin: var(--spacing-xl) 0;
+  }
+
+  @media (min-width: 576px) {
+    .sustainability-stats {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .sust-stat {
+    text-align: center;
+    padding: var(--spacing-lg);
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+  }
+
+  .sust-stat:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .sust-stat-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto var(--spacing-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    border-radius: 50%;
+    color: var(--color-white);
+  }
+
+  .sust-stat-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .sust-stat h4 {
+    font-size: var(--text-base);
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .sust-stat p {
+    font-size: var(--text-sm);
+    color: var(--color-gray-500);
+    margin: 0;
+  }
+
+  .sustainability-images .image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .sustainability-images img {
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    transition: transform var(--transition-base);
+  }
+
+  .sustainability-images img:hover {
+    transform: scale(1.02);
+  }
+
+  .sustainability-images .img-1 {
+    grid-column: span 2;
+  }
+
+  /* Innovation Section */
+  .innovation-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  @media (min-width: 768px) {
+    .innovation-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .innovation-card {
+    background: var(--color-white);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-xl);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+  }
+
+  .innovation-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .innovation-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(139, 195, 74, 0.1));
+    border-radius: 50%;
+    color: var(--color-primary);
+  }
+
+  .innovation-icon svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .innovation-card h3 {
+    font-size: var(--text-lg);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .innovation-card p {
+    color: var(--color-gray-600);
+    font-size: var(--text-sm);
+    margin: 0;
+  }
+
+  /* Gallery Section */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  @media (min-width: 768px) {
+    .gallery-grid {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 200px);
+    }
+
+    .gallery-item-large {
+      grid-row: span 2;
+    }
+
+    .gallery-item-wide {
+      grid-column: span 2;
+    }
+  }
+
+  .gallery-item {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    position: relative;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+  }
+
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+
+  /* Bourse Section */
+  .section-bourse {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .bourse-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--color-white);
+  }
+
+  .bourse-content h2 {
+    color: var(--color-white);
+    font-size: var(--text-4xl);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .bourse-text {
+    font-size: var(--text-lg);
+    opacity: 0.9;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .bourse-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .bourse-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+  }
+
+  .bourse-feature svg {
+    width: 40px;
+    height: 40px;
+    color: var(--color-accent);
+  }
+
+  .bourse-feature span {
+    font-weight: 500;
+  }
+
+  /* CTA Section */
+  .section-cta {
+    background: var(--color-gray-900);
+    color: var(--color-white);
+  }
+
+  .cta-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .cta-content h2 {
+    color: var(--color-white);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .cta-content > p {
+    color: var(--color-gray-400);
+    font-size: var(--text-lg);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .cta-buttons .btn-secondary {
+    border-color: var(--color-gray-600);
+    color: var(--color-white);
+  }
+
+  .cta-buttons .btn-secondary:hover {
+    background: var(--color-white);
+    color: var(--color-gray-900);
+  }
+
+  .cta-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-xl);
+  }
+
+  .cta-contact a {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--color-gray-400);
+    transition: color var(--transition-fast);
+  }
+
+  .cta-contact a:hover {
+    color: var(--color-primary-light);
+  }
+
+  .cta-contact svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Text colors in title sections */
+  .section-title.text-white h2 { color: var(--color-white); }
+  .section-title.text-white p { color: rgba(255, 255, 255, 0.8); }
+</style>

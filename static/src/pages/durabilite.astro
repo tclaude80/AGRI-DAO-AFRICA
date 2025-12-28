@@ -1,0 +1,696 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Durabilité & Impact"
+  description="Découvrez les engagements éco-responsables de KFTM Green : lutte contre le gaspillage alimentaire, impact local positif, agriculture durable au Cameroun."
+>
+  <Header slot="header" currentPath="/durabilite" />
+
+  <!-- Hero Banner -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="hero-content" data-aos="fade-up">
+        <span class="page-badge">Notre engagement</span>
+        <h1>Durabilité & Impact</h1>
+        <p>Une agriculture responsable pour un avenir durable au Cameroun et en Afrique.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision Section -->
+  <section class="section">
+    <div class="container">
+      <div class="vision-grid">
+        <div class="vision-content" data-aos="fade-right">
+          <span class="section-badge">Notre vision</span>
+          <h2>L'éco-responsabilité au coeur de notre ADN</h2>
+          <p>
+            Chez KFTM Green, la durabilité n'est pas un argument marketing, c'est notre
+            raison d'être. Nous avons fondé cette entreprise avec la conviction que
+            l'agro-industrie peut être un levier de développement durable pour le Cameroun.
+          </p>
+          <p>
+            Chaque décision que nous prenons est guidée par notre triple objectif :
+            créer de la valeur économique, avoir un impact social positif et
+            préserver notre environnement.
+          </p>
+        </div>
+        <div class="vision-image" data-aos="fade-left">
+          <img src="/images/plantation-durable.jpg" alt="Plantation durable de bananes plantains" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pillars Section -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="section-badge">Nos piliers</span>
+        <h2>Trois axes d'engagement</h2>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+              <line x1="12" y1="22.08" x2="12" y2="12"/>
+            </svg>
+          </div>
+          <h3>Environnement</h3>
+          <p>Réduction de notre empreinte écologique et valorisation des ressources naturelles.</p>
+          <ul class="pillar-list">
+            <li>Lutte contre le gaspillage alimentaire</li>
+            <li>Valorisation des sous-produits</li>
+            <li>Gestion responsable de l'eau</li>
+            <li>Emballages éco-conçus</li>
+          </ul>
+        </div>
+
+        <div class="pillar-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3>Social</h3>
+          <p>Création d'emplois et soutien aux communautés locales.</p>
+          <ul class="pillar-list">
+            <li>Emplois locaux à Kribi</li>
+            <li>Formation des producteurs</li>
+            <li>Revenus stables pour les agriculteurs</li>
+            <li>Autonomisation des femmes</li>
+          </ul>
+        </div>
+
+        <div class="pillar-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="1" x2="12" y2="23"/>
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+          </div>
+          <h3>Économie</h3>
+          <p>Création de valeur locale et structuration de la filière plantain.</p>
+          <ul class="pillar-list">
+            <li>Transformation locale</li>
+            <li>Réduction des importations</li>
+            <li>Export de produits finis</li>
+            <li>Prix justes aux producteurs</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Anti-Waste Section -->
+  <section class="section">
+    <div class="container">
+      <div class="waste-grid">
+        <div class="waste-content" data-aos="fade-right">
+          <span class="section-badge">Lutte anti-gaspillage</span>
+          <h2>Valoriser chaque banane plantain</h2>
+          <p>
+            Au Cameroun, des tonnes de bananes plantains sont perdues chaque année
+            faute de débouchés pour les fruits trop mûrs ou hors calibre.
+            KFTM Green transforme ces bananes en produits de qualité.
+          </p>
+
+          <div class="waste-stats">
+            <div class="waste-stat">
+              <span class="stat-value">30%</span>
+              <span class="stat-label">des récoltes perdues sans transformation</span>
+            </div>
+            <div class="waste-stat">
+              <span class="stat-value">100%</span>
+              <span class="stat-label">des plantains utilisés chez KFTM</span>
+            </div>
+          </div>
+
+          <p>
+            Notre modèle permet aux producteurs de vendre leurs bananes qui auraient
+            été jetées, créant ainsi une nouvelle source de revenus tout en réduisant
+            le gaspillage alimentaire.
+          </p>
+        </div>
+        <div class="waste-visual" data-aos="fade-left">
+          <div class="waste-diagram">
+            <div class="diagram-item">
+              <div class="diagram-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <span>Récolte</span>
+            </div>
+            <div class="diagram-arrow">→</div>
+            <div class="diagram-item diagram-item-highlight">
+              <div class="diagram-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="6" width="20" height="12" rx="2"/>
+                  <path d="M12 12h.01"/>
+                </svg>
+              </div>
+              <span>Transformation</span>
+            </div>
+            <div class="diagram-arrow">→</div>
+            <div class="diagram-item">
+              <div class="diagram-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                </svg>
+              </div>
+              <span>Produits</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Section -->
+  <section class="section bg-gradient section-impact">
+    <div class="container">
+      <div class="section-title text-white" data-aos="fade-up">
+        <span class="section-badge section-badge-light">Notre impact</span>
+        <h2>Des chiffres qui parlent</h2>
+      </div>
+
+      <div class="impact-grid">
+        <div class="impact-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="impact-number">+50</div>
+          <div class="impact-label">Producteurs partenaires</div>
+        </div>
+
+        <div class="impact-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="impact-number">100%</div>
+          <div class="impact-label">Production locale</div>
+        </div>
+
+        <div class="impact-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="impact-number">0</div>
+          <div class="impact-label">Additif artificiel</div>
+        </div>
+
+        <div class="impact-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="impact-number">5+</div>
+          <div class="impact-label">Années d'engagement</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Commitments Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="section-badge">Engagements</span>
+        <h2>Nos objectifs durables</h2>
+      </div>
+
+      <div class="commitments-grid">
+        <div class="commitment-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="commitment-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <h4>100% traçable</h4>
+          <p>Chaque produit tracé de la parcelle au consommateur.</p>
+        </div>
+
+        <div class="commitment-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="commitment-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <h4>Zéro déchet</h4>
+          <p>Objectif de valorisation totale des sous-produits.</p>
+        </div>
+
+        <div class="commitment-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="commitment-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <h4>Emploi local</h4>
+          <p>Priorité à l'emploi des populations locales de Kribi.</p>
+        </div>
+
+        <div class="commitment-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="commitment-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <h4>Prix équitables</h4>
+          <p>Rémunération juste des producteurs partenaires.</p>
+        </div>
+
+        <div class="commitment-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="commitment-check commitment-check-pending">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <h4>Certification Bio</h4>
+          <p>En cours de préparation pour marchés premium.</p>
+        </div>
+
+        <div class="commitment-card" data-aos="fade-up" data-aos-delay="600">
+          <div class="commitment-check commitment-check-pending">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <h4>Emballages recyclables</h4>
+          <p>Transition vers des emballages 100% recyclables.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="cta-box" data-aos="fade-up">
+        <h2>Rejoignez notre démarche durable</h2>
+        <p>Que vous soyez producteur, distributeur ou consommateur, participez à notre vision d'une agriculture responsable.</p>
+        <div class="cta-buttons">
+          <a href="/filiere" class="btn btn-primary btn-lg">Rejoindre la filière</a>
+          <a href="/contact" class="btn btn-secondary btn-lg">Nous contacter</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</BaseLayout>
+
+<style>
+  /* Page Hero */
+  .page-hero {
+    padding: calc(100px + var(--spacing-4xl)) 0 var(--spacing-4xl);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    color: var(--color-white);
+  }
+
+  .page-badge {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-md);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .page-hero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-white);
+  }
+
+  .page-hero p {
+    font-size: var(--text-xl);
+    opacity: 0.9;
+    max-width: 600px;
+  }
+
+  /* Section Badge */
+  .section-badge {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-md);
+    background: rgba(76, 175, 80, 0.1);
+    color: var(--color-primary);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .section-badge-light {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--color-white);
+  }
+
+  /* Vision Grid */
+  .vision-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+  }
+
+  @media (min-width: 992px) {
+    .vision-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .vision-content h2 {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .vision-content p {
+    color: var(--color-gray-600);
+    line-height: 1.8;
+  }
+
+  .vision-image img {
+    width: 100%;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
+  }
+
+  /* Pillars Grid */
+  .pillars-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  @media (min-width: 768px) {
+    .pillars-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .pillar-card {
+    background: var(--color-white);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: all var(--transition-base);
+  }
+
+  .pillar-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .pillar-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    border-radius: 50%;
+    color: var(--color-white);
+  }
+
+  .pillar-icon svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .pillar-card h3 {
+    font-size: var(--text-xl);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .pillar-card > p {
+    color: var(--color-gray-600);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .pillar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  .pillar-list li {
+    position: relative;
+    padding-left: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-gray-700);
+    font-size: var(--text-sm);
+  }
+
+  .pillar-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: 700;
+  }
+
+  /* Waste Grid */
+  .waste-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+  }
+
+  @media (min-width: 992px) {
+    .waste-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .waste-content h2 {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .waste-content p {
+    color: var(--color-gray-600);
+    line-height: 1.8;
+  }
+
+  .waste-stats {
+    display: flex;
+    gap: var(--spacing-xl);
+    margin: var(--spacing-xl) 0;
+  }
+
+  .waste-stat {
+    text-align: center;
+    padding: var(--spacing-lg);
+    background: var(--color-off-white);
+    border-radius: var(--radius-lg);
+    flex: 1;
+  }
+
+  .stat-value {
+    display: block;
+    font-size: var(--text-3xl);
+    font-weight: 700;
+    font-family: var(--font-secondary);
+    color: var(--color-primary);
+  }
+
+  .stat-label {
+    font-size: var(--text-sm);
+    color: var(--color-gray-600);
+  }
+
+  /* Waste Diagram */
+  .waste-diagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+  }
+
+  .diagram-item {
+    text-align: center;
+    padding: var(--spacing-lg);
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    min-width: 100px;
+  }
+
+  .diagram-item-highlight {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: var(--color-white);
+  }
+
+  .diagram-item-highlight .diagram-icon {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--color-white);
+  }
+
+  .diagram-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-off-white);
+    border-radius: 50%;
+    color: var(--color-primary);
+  }
+
+  .diagram-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .diagram-arrow {
+    font-size: var(--text-2xl);
+    color: var(--color-primary);
+    font-weight: 700;
+  }
+
+  /* Impact Section */
+  .section-impact .section-title h2 {
+    color: var(--color-white);
+  }
+
+  .impact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-xl);
+  }
+
+  @media (min-width: 768px) {
+    .impact-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .impact-card {
+    text-align: center;
+    padding: var(--spacing-xl);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: var(--radius-xl);
+    transition: all var(--transition-base);
+  }
+
+  .impact-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+  }
+
+  .impact-number {
+    font-size: var(--text-4xl);
+    font-weight: 800;
+    font-family: var(--font-secondary);
+    color: var(--color-accent);
+  }
+
+  .impact-label {
+    color: var(--color-white);
+    font-size: var(--text-sm);
+    margin-top: var(--spacing-sm);
+  }
+
+  /* Commitments Grid */
+  .commitments-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  @media (min-width: 576px) {
+    .commitments-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 992px) {
+    .commitments-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .commitment-card {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+  }
+
+  .commitment-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateX(5px);
+  }
+
+  .commitment-check {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-primary);
+    border-radius: 50%;
+    color: var(--color-white);
+  }
+
+  .commitment-check svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .commitment-check-pending {
+    background: var(--color-gray-300);
+    color: var(--color-gray-600);
+  }
+
+  .commitment-card h4 {
+    font-size: var(--text-base);
+    margin-bottom: 4px;
+  }
+
+  .commitment-card p {
+    font-size: var(--text-sm);
+    color: var(--color-gray-600);
+    margin: 0;
+  }
+
+  /* CTA Box */
+  .cta-box {
+    background: var(--color-white);
+    padding: var(--spacing-3xl);
+    border-radius: var(--radius-xl);
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .cta-box h2 {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .cta-box > p {
+    color: var(--color-gray-600);
+    max-width: 600px;
+    margin: 0 auto var(--spacing-xl);
+  }
+
+  .cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-md);
+  }
+</style>

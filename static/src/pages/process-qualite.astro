@@ -1,0 +1,618 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Process & Qualité"
+  description="Découvrez le processus de transformation de la banane plantain chez KFTM Green. Contrôle qualité rigoureux, hygiène irréprochable et R&D continue."
+>
+  <Header slot="header" currentPath="/process-qualite" />
+
+  <!-- Hero Banner -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="hero-content" data-aos="fade-up">
+        <span class="page-badge">Notre savoir-faire</span>
+        <h1>Process & Qualité</h1>
+        <p>De la sélection à l'emballage, chaque étape est maîtrisée pour garantir l'excellence.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Overview -->
+  <section class="section">
+    <div class="container">
+      <div class="intro-content text-center" data-aos="fade-up">
+        <h2>Un processus rigoureux</h2>
+        <p>
+          Chez KFTM Green, la qualité n'est pas négociable. Notre processus de transformation
+          suit des normes strictes à chaque étape pour vous garantir des produits sains,
+          savoureux et nutritifs.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Steps -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="process-steps">
+        <!-- Step 1 -->
+        <div class="process-step" data-aos="fade-up">
+          <div class="step-visual">
+            <div class="step-number">01</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="step-content">
+            <h3>Approvisionnement & Sélection</h3>
+            <p>
+              Nous travaillons en partenariat avec les producteurs locaux de la région de Kribi.
+              Seules les bananes plantains répondant à nos critères stricts de qualité et de maturité
+              sont sélectionnées pour la transformation.
+            </p>
+            <ul class="step-features">
+              <li>Partenariats avec producteurs locaux</li>
+              <li>Sélection rigoureuse des fruits</li>
+              <li>Contrôle de la maturité optimale</li>
+              <li>Traçabilité depuis la parcelle</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="process-step process-step-reverse" data-aos="fade-up">
+          <div class="step-visual">
+            <div class="step-number">02</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M8 12l2 2 4-4"/>
+              </svg>
+            </div>
+          </div>
+          <div class="step-content">
+            <h3>Réception & Contrôle</h3>
+            <p>
+              À la réception, chaque lot est inspecté et pesé. Nous vérifions la qualité,
+              l'absence de défauts et la conformité aux spécifications. Les lots non conformes
+              sont refusés.
+            </p>
+            <ul class="step-features">
+              <li>Inspection visuelle de chaque lot</li>
+              <li>Pesée et documentation</li>
+              <li>Vérification de la qualité sanitaire</li>
+              <li>Enregistrement pour traçabilité</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="process-step" data-aos="fade-up">
+          <div class="step-visual">
+            <div class="step-number">03</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
+              </svg>
+            </div>
+          </div>
+          <div class="step-content">
+            <h3>Préparation & Épluchage</h3>
+            <p>
+              Les bananes sont lavées, épluchées manuellement dans des conditions d'hygiène
+              strictes, puis découpées en tranches uniformes pour garantir un séchage homogène.
+            </p>
+            <ul class="step-features">
+              <li>Lavage et désinfection</li>
+              <li>Épluchage manuel soigné</li>
+              <li>Découpe uniforme</li>
+              <li>Environnement contrôlé</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="process-step process-step-reverse" data-aos="fade-up">
+          <div class="step-visual">
+            <div class="step-number">04</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/>
+                <circle cx="12" cy="12" r="4"/>
+              </svg>
+            </div>
+          </div>
+          <div class="step-content">
+            <h3>Séchage</h3>
+            <p>
+              Le séchage est une étape cruciale. Nous utilisons des séchoirs contrôlés
+              pour déshydrater les tranches de plantain à la température idéale, préservant
+              ainsi les nutriments et la saveur.
+            </p>
+            <ul class="step-features">
+              <li>Température contrôlée</li>
+              <li>Durée optimisée</li>
+              <li>Préservation des nutriments</li>
+              <li>Contrôle de l'humidité</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="process-step" data-aos="fade-up">
+          <div class="step-visual">
+            <div class="step-number">05</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="6" width="20" height="12" rx="2"/>
+                <path d="M12 12h.01"/>
+                <path d="M17 12h.01"/>
+                <path d="M7 12h.01"/>
+              </svg>
+            </div>
+          </div>
+          <div class="step-content">
+            <h3>Broyage & Tamisage</h3>
+            <p>
+              Les tranches séchées sont broyées finement puis tamisées pour obtenir
+              une farine de texture homogène et de granulométrie constante.
+            </p>
+            <ul class="step-features">
+              <li>Broyage fin et uniforme</li>
+              <li>Tamisage multi-niveaux</li>
+              <li>Texture garantie</li>
+              <li>Qualité constante</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="process-step process-step-reverse" data-aos="fade-up">
+          <div class="step-visual">
+            <div class="step-number">06</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 7h-4a2 2 0 0 0-2 2v10"/>
+                <path d="M14 19H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h4"/>
+                <polyline points="10 12 14 12"/>
+                <polyline points="12 10 12 14"/>
+              </svg>
+            </div>
+          </div>
+          <div class="step-content">
+            <h3>Conditionnement</h3>
+            <p>
+              La farine est conditionnée dans des emballages hermétiques pour préserver
+              sa fraîcheur et ses qualités nutritionnelles. Chaque lot est étiqueté
+              avec toutes les informations de traçabilité.
+            </p>
+            <ul class="step-features">
+              <li>Emballage hermétique</li>
+              <li>Protection contre l'humidité</li>
+              <li>Étiquetage complet</li>
+              <li>Date de péremption claire</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quality Control -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="section-badge">Contrôle qualité</span>
+        <h2>La qualité à chaque étape</h2>
+        <p>Notre système de contrôle qualité garantit des produits irréprochables.</p>
+      </div>
+
+      <div class="quality-grid">
+        <div class="quality-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="quality-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3>Hygiène irréprochable</h3>
+          <p>
+            Personnel formé aux bonnes pratiques d'hygiène. Équipements nettoyés
+            et désinfectés régulièrement. Environnement de travail contrôlé.
+          </p>
+        </div>
+
+        <div class="quality-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="quality-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 11l3 3L22 4"/>
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+            </svg>
+          </div>
+          <h3>Tests réguliers</h3>
+          <p>
+            Analyses microbiologiques et nutritionnelles effectuées sur chaque lot
+            pour garantir la conformité aux normes sanitaires.
+          </p>
+        </div>
+
+        <div class="quality-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="quality-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="12" y1="18" x2="12" y2="12"/>
+              <line x1="9" y1="15" x2="15" y2="15"/>
+            </svg>
+          </div>
+          <h3>Documentation complète</h3>
+          <p>
+            Chaque étape est documentée. Traçabilité totale du champ au produit fini.
+            Archivage des données pour amélioration continue.
+          </p>
+        </div>
+
+        <div class="quality-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="quality-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h3>Amélioration continue</h3>
+          <p>
+            Notre équipe R&D travaille constamment à l'amélioration de nos process
+            pour optimiser la qualité et l'efficacité.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- R&D Section -->
+  <section class="section bg-gradient section-rd">
+    <div class="container">
+      <div class="rd-content" data-aos="fade-up">
+        <div class="rd-text">
+          <span class="section-badge section-badge-light">Innovation</span>
+          <h2>Recherche & Développement</h2>
+          <p>
+            Notre département R&D est au coeur de notre stratégie. Nous investissons
+            dans la recherche pour améliorer nos produits existants et en développer
+            de nouveaux.
+          </p>
+          <ul class="rd-list">
+            <li>Optimisation des procédés de transformation</li>
+            <li>Développement de nouveaux produits</li>
+            <li>Amélioration des valeurs nutritionnelles</li>
+            <li>Recherche sur la conservation naturelle</li>
+            <li>Innovation packaging éco-responsable</li>
+          </ul>
+          <a href="/contact" class="btn btn-accent">Parler de votre projet R&D</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-box" data-aos="fade-up">
+        <h2>Intéressé par notre approche qualité ?</h2>
+        <p>Contactez-nous pour une visite de nos installations ou pour discuter de partenariats.</p>
+        <div class="cta-buttons">
+          <a href="/contact" class="btn btn-primary btn-lg">Nous contacter</a>
+          <a href="/tracabilite" class="btn btn-secondary btn-lg">Découvrir la traçabilité</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</BaseLayout>
+
+<style>
+  /* Page Hero */
+  .page-hero {
+    padding: calc(100px + var(--spacing-4xl)) 0 var(--spacing-4xl);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    color: var(--color-white);
+  }
+
+  .page-badge {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-md);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .page-hero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-white);
+  }
+
+  .page-hero p {
+    font-size: var(--text-xl);
+    opacity: 0.9;
+    max-width: 600px;
+  }
+
+  /* Section Badge */
+  .section-badge {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-md);
+    background: rgba(76, 175, 80, 0.1);
+    color: var(--color-primary);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .section-badge-light {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--color-white);
+  }
+
+  /* Intro Content */
+  .intro-content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .intro-content h2 {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .intro-content p {
+    color: var(--color-gray-600);
+    font-size: var(--text-lg);
+  }
+
+  /* Process Steps */
+  .process-steps {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3xl);
+  }
+
+  .process-step {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+  }
+
+  @media (min-width: 768px) {
+    .process-step {
+      grid-template-columns: 200px 1fr;
+    }
+
+    .process-step-reverse {
+      grid-template-columns: 1fr 200px;
+    }
+
+    .process-step-reverse .step-visual {
+      order: 2;
+    }
+  }
+
+  .step-visual {
+    text-align: center;
+  }
+
+  .step-number {
+    font-size: var(--text-5xl);
+    font-weight: 800;
+    font-family: var(--font-secondary);
+    color: var(--color-primary);
+    opacity: 0.3;
+    line-height: 1;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .step-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    border-radius: 50%;
+    color: var(--color-white);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .step-icon svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .step-content {
+    background: var(--color-white);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+  }
+
+  .step-content h3 {
+    font-size: var(--text-xl);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .step-content > p {
+    color: var(--color-gray-600);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .step-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+
+  @media (min-width: 576px) {
+    .step-features {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .step-features li {
+    position: relative;
+    padding-left: var(--spacing-lg);
+    color: var(--color-gray-700);
+    font-size: var(--text-sm);
+  }
+
+  .step-features li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    background: var(--color-primary);
+    border-radius: 50%;
+  }
+
+  /* Quality Grid */
+  .quality-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  @media (min-width: 576px) {
+    .quality-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 992px) {
+    .quality-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .quality-card {
+    text-align: center;
+    padding: var(--spacing-xl);
+    background: var(--color-white);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+  }
+
+  .quality-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .quality-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(139, 195, 74, 0.1));
+    border-radius: 50%;
+    color: var(--color-primary);
+  }
+
+  .quality-icon svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .quality-card h3 {
+    font-size: var(--text-lg);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .quality-card p {
+    color: var(--color-gray-600);
+    font-size: var(--text-sm);
+    margin: 0;
+  }
+
+  /* R&D Section */
+  .section-rd {
+    color: var(--color-white);
+  }
+
+  .rd-content {
+    max-width: 700px;
+  }
+
+  .rd-text h2 {
+    color: var(--color-white);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .rd-text > p {
+    opacity: 0.9;
+    margin-bottom: var(--spacing-xl);
+    font-size: var(--text-lg);
+  }
+
+  .rd-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--spacing-xl);
+  }
+
+  .rd-list li {
+    position: relative;
+    padding-left: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .rd-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-weight: 700;
+  }
+
+  /* CTA Box */
+  .cta-box {
+    background: var(--color-off-white);
+    padding: var(--spacing-3xl);
+    border-radius: var(--radius-xl);
+    text-align: center;
+  }
+
+  .cta-box h2 {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .cta-box > p {
+    color: var(--color-gray-600);
+    max-width: 600px;
+    margin: 0 auto var(--spacing-xl);
+  }
+
+  .cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-md);
+  }
+</style>

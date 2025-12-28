@@ -1,0 +1,611 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Contact"
+  description="Contactez KFTM Green SARL pour vos commandes, partenariats ou informations. Téléphone: +237 654 39 74 50, Email: infos@kftmgreen.cm. Basés à Kribi, Cameroun."
+>
+  <Header slot="header" currentPath="/contact" />
+
+  <!-- Hero Banner -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="hero-content" data-aos="fade-up">
+        <span class="page-badge">Restons en contact</span>
+        <h1>Contactez-nous</h1>
+        <p>Une question, un projet de partenariat ou une commande ? Nous sommes à votre écoute.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper" data-aos="fade-right">
+          <h2>Envoyez-nous un message</h2>
+          <p>Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
+
+          <form class="contact-form" id="contactForm" action="#" method="POST">
+            <!-- Honeypot field for spam protection -->
+            <div class="honeypot" aria-hidden="true">
+              <label for="website">Website</label>
+              <input type="text" name="website" id="website" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName" class="form-label">Prénom <span class="required">*</span></label>
+                <input type="text" id="firstName" name="firstName" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName" class="form-label">Nom <span class="required">*</span></label>
+                <input type="text" id="lastName" name="lastName" class="form-input" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email" class="form-label">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label for="phone" class="form-label">Téléphone</label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="+237...">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="company" class="form-label">Entreprise / Organisation</label>
+              <input type="text" id="company" name="company" class="form-input">
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Objet <span class="required">*</span></label>
+              <select id="subject" name="subject" class="form-select" required>
+                <option value="">Sélectionnez un objet</option>
+                <option value="commande">Passer une commande</option>
+                <option value="distribution">Devenir distributeur</option>
+                <option value="partenariat">Partenariat / Export</option>
+                <option value="producteur">Rejoindre la filière (producteur)</option>
+                <option value="information">Demande d'information</option>
+                <option value="presse">Contact presse / média</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message <span class="required">*</span></label>
+              <textarea id="message" name="message" class="form-textarea" rows="5" required placeholder="Décrivez votre demande..."></textarea>
+            </div>
+
+            <div class="form-group form-checkbox">
+              <input type="checkbox" id="privacy" name="privacy" required>
+              <label for="privacy">
+                J'accepte que mes données soient traitées conformément à la
+                <a href="/politique-confidentialite">politique de confidentialité</a>. <span class="required">*</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg btn-submit">
+              <span class="btn-text">Envoyer le message</span>
+              <span class="btn-loading" aria-hidden="true">
+                <svg class="spinner" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" stroke-dasharray="60" stroke-dashoffset="20"/>
+                </svg>
+              </span>
+            </button>
+
+            <div class="form-message" id="formMessage" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info" data-aos="fade-left">
+          <div class="info-card">
+            <h3>Nos coordonnées</h3>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <h4>Adresse</h4>
+                <p>Kribi, Cameroun</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                </svg>
+              </div>
+              <div>
+                <h4>Téléphone</h4>
+                <a href="tel:+237654397450">+237 654 39 74 50</a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:infos@kftmgreen.cm">infos@kftmgreen.cm</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <h3>Réseaux sociaux</h3>
+            <div class="social-links">
+              <a href="https://facebook.com/kftmgreen" target="_blank" rel="noopener noreferrer" class="social-link">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+                <span>Facebook</span>
+              </a>
+              <a href="https://linkedin.com/company/kftmgreen" target="_blank" rel="noopener noreferrer" class="social-link">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://wa.me/237654397450" target="_blank" rel="noopener noreferrer" class="social-link social-whatsapp">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                </svg>
+                <span>WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="info-card info-card-highlight">
+            <h3>Horaires d'ouverture</h3>
+            <ul class="hours-list">
+              <li>
+                <span>Lundi - Vendredi</span>
+                <span>8h00 - 17h00</span>
+              </li>
+              <li>
+                <span>Samedi</span>
+                <span>8h00 - 12h00</span>
+              </li>
+              <li>
+                <span>Dimanche</span>
+                <span>Fermé</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="section-badge">FAQ</span>
+        <h2>Questions fréquentes</h2>
+      </div>
+
+      <div class="faq-grid" data-aos="fade-up">
+        <div class="faq-item">
+          <h4>Comment passer une commande ?</h4>
+          <p>
+            Vous pouvez nous contacter via le formulaire ci-dessus, par téléphone ou par email.
+            Indiquez les produits souhaités et les quantités, et nous vous enverrons un devis.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h4>Livrez-vous à l'international ?</h4>
+          <p>
+            Oui, nous exportons nos produits à l'international. Contactez-nous pour discuter
+            des modalités de livraison et des conditions d'export.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h4>Comment devenir distributeur ?</h4>
+          <p>
+            Nous recherchons des partenaires distributeurs au Cameroun et à l'étranger.
+            Sélectionnez "Devenir distributeur" dans le formulaire et décrivez votre projet.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h4>Vos produits sont-ils certifiés sans gluten ?</h4>
+          <p>
+            Oui, notre farine de banane plantain "Mère Anto" est naturellement sans gluten.
+            Elle convient parfaitement aux personnes intolérantes au gluten.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</BaseLayout>
+
+<style>
+  /* Page Hero */
+  .page-hero {
+    padding: calc(100px + var(--spacing-4xl)) 0 var(--spacing-4xl);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    color: var(--color-white);
+  }
+
+  .page-badge {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-md);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .page-hero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-white);
+  }
+
+  .page-hero p {
+    font-size: var(--text-xl);
+    opacity: 0.9;
+    max-width: 600px;
+  }
+
+  /* Section Badge */
+  .section-badge {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-md);
+    background: rgba(76, 175, 80, 0.1);
+    color: var(--color-primary);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  /* Contact Grid */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-3xl);
+  }
+
+  @media (min-width: 992px) {
+    .contact-grid {
+      grid-template-columns: 1.5fr 1fr;
+    }
+  }
+
+  /* Contact Form Wrapper */
+  .contact-form-wrapper h2 {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .contact-form-wrapper > p {
+    color: var(--color-gray-600);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  /* Honeypot */
+  .honeypot {
+    position: absolute;
+    left: -9999px;
+  }
+
+  /* Form Row */
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  @media (min-width: 576px) {
+    .form-row {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .required {
+    color: #e53935;
+  }
+
+  /* Form Checkbox */
+  .form-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+
+  .form-checkbox input {
+    margin-top: 4px;
+    flex-shrink: 0;
+  }
+
+  .form-checkbox label {
+    font-size: var(--text-sm);
+    color: var(--color-gray-600);
+    cursor: pointer;
+  }
+
+  .form-checkbox a {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+
+  /* Submit Button */
+  .btn-submit {
+    width: 100%;
+    position: relative;
+  }
+
+  .btn-submit .btn-loading {
+    display: none;
+  }
+
+  .btn-submit.loading .btn-text {
+    visibility: hidden;
+  }
+
+  .btn-submit.loading .btn-loading {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .spinner {
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  /* Form Message */
+  .form-message {
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    text-align: center;
+    display: none;
+  }
+
+  .form-message.success {
+    display: block;
+    background: rgba(76, 175, 80, 0.1);
+    color: var(--color-primary-dark);
+    border: 1px solid var(--color-primary);
+  }
+
+  .form-message.error {
+    display: block;
+    background: rgba(229, 57, 53, 0.1);
+    color: #c62828;
+    border: 1px solid #e53935;
+  }
+
+  /* Contact Info */
+  .info-card {
+    background: var(--color-white);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .info-card h3 {
+    font-size: var(--text-lg);
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--color-gray-200);
+  }
+
+  .info-item {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .info-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .info-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    border-radius: var(--radius-md);
+    color: var(--color-white);
+  }
+
+  .info-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .info-item h4 {
+    font-size: var(--text-sm);
+    color: var(--color-gray-500);
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+
+  .info-item p,
+  .info-item a {
+    font-size: var(--text-base);
+    color: var(--color-gray-800);
+    margin: 0;
+  }
+
+  .info-item a:hover {
+    color: var(--color-primary);
+  }
+
+  /* Social Links */
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .social-link {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: var(--color-gray-100);
+    border-radius: var(--radius-md);
+    color: var(--color-gray-700);
+    transition: all var(--transition-fast);
+  }
+
+  .social-link:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  .social-link svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  .social-whatsapp:hover {
+    background: #25D366;
+  }
+
+  /* Hours List */
+  .hours-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .hours-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--color-gray-200);
+  }
+
+  .hours-list li:last-child {
+    border-bottom: none;
+  }
+
+  .info-card-highlight {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: var(--color-white);
+  }
+
+  .info-card-highlight h3 {
+    color: var(--color-white);
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .info-card-highlight .hours-list li {
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* FAQ Grid */
+  .faq-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 768px) {
+    .faq-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .faq-item {
+    background: var(--color-white);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .faq-item h4 {
+    font-size: var(--text-base);
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-gray-900);
+  }
+
+  .faq-item p {
+    color: var(--color-gray-600);
+    font-size: var(--text-sm);
+    margin: 0;
+  }
+</style>
+
+<script>
+  const form = document.getElementById('contactForm') as HTMLFormElement;
+  const submitBtn = form?.querySelector('.btn-submit');
+  const formMessage = document.getElementById('formMessage');
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Check honeypot
+    const honeypot = form.querySelector('[name="website"]') as HTMLInputElement;
+    if (honeypot?.value) {
+      return; // Bot detected
+    }
+
+    // Show loading state
+    submitBtn?.classList.add('loading');
+
+    // Simulate form submission (replace with actual endpoint)
+    try {
+      await new Promise(resolve => setTimeout(resolve, 1500));
+
+      // Show success message
+      if (formMessage) {
+        formMessage.className = 'form-message success';
+        formMessage.textContent = 'Votre message a été envoyé avec succès. Nous vous répondrons dans les plus brefs délais.';
+      }
+
+      // Reset form
+      form.reset();
+    } catch (error) {
+      // Show error message
+      if (formMessage) {
+        formMessage.className = 'form-message error';
+        formMessage.textContent = 'Une erreur est survenue. Veuillez réessayer ou nous contacter directement par téléphone.';
+      }
+    } finally {
+      submitBtn?.classList.remove('loading');
+    }
+  });
+</script>

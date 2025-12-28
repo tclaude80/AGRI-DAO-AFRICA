@@ -1,0 +1,747 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Bourse du Plantain"
+  description="La Bourse du Plantain : projet KFTM Green pour structurer la filière banane plantain au Cameroun. Plateforme de mise en relation producteurs-acheteurs avec traçabilité blockchain."
+>
+  <Header slot="header" currentPath="/bourse-plantain" />
+
+  <!-- Hero Banner -->
+  <section class="page-hero page-hero-special">
+    <div class="container">
+      <div class="hero-content text-center" data-aos="fade-up">
+        <span class="page-badge">Projet innovant</span>
+        <h1>La Bourse du Plantain</h1>
+        <p>
+          Une plateforme révolutionnaire pour structurer la filière plantain
+          et connecter producteurs, transformateurs et acheteurs.
+        </p>
+        <div class="hero-badge-coming">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 6v6l4 2"/>
+          </svg>
+          <span>Lancement prévu 2025</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision Section -->
+  <section class="section">
+    <div class="container">
+      <div class="vision-grid">
+        <div class="vision-content" data-aos="fade-right">
+          <span class="section-badge">La vision</span>
+          <h2>Structurer la filière plantain</h2>
+          <p>
+            La filière banane plantain au Cameroun souffre d'un manque de structuration :
+            les producteurs peinent à trouver des débouchés stables, les transformateurs
+            manquent d'approvisionnement régulier, et les acheteurs n'ont pas de visibilité
+            sur l'offre disponible.
+          </p>
+          <p>
+            <strong>La Bourse du Plantain</strong> est notre réponse à ce défi : une plateforme
+            numérique qui met en relation tous les acteurs de la filière, avec transparence
+            et traçabilité.
+          </p>
+          <p>
+            Ce projet s'inscrit dans notre ambition de devenir le leader de la transformation
+            du plantain en Afrique Centrale, en créant un écosystème structuré et équitable.
+          </p>
+        </div>
+        <div class="vision-visual" data-aos="fade-left">
+          <div class="vision-diagram">
+            <div class="diagram-center">
+              <span>Bourse du Plantain</span>
+            </div>
+            <div class="diagram-node node-1">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+              <span>Producteurs</span>
+            </div>
+            <div class="diagram-node node-2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="6" width="20" height="12" rx="2"/>
+                <path d="M12 12h.01"/>
+              </svg>
+              <span>Transformateurs</span>
+            </div>
+            <div class="diagram-node node-3">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="1" y="3" width="15" height="13"/>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+              </svg>
+              <span>Distributeurs</span>
+            </div>
+            <div class="diagram-node node-4">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+              </svg>
+              <span>Acheteurs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="section-badge">Fonctionnalités</span>
+        <h2>Ce que permettra la plateforme</h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3>Mise en relation</h3>
+          <p>
+            Connecter producteurs, transformateurs et acheteurs sur une plateforme unique.
+            Trouver facilement des partenaires commerciaux fiables.
+          </p>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="1" x2="12" y2="23"/>
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+          </div>
+          <h3>Prix transparents</h3>
+          <p>
+            Visibilité sur les prix du marché en temps réel.
+            Négociation équitable entre vendeurs et acheteurs.
+          </p>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+            </svg>
+          </div>
+          <h3>Traçabilité blockchain</h3>
+          <p>
+            Chaque transaction enregistrée sur la blockchain.
+            Transparence totale sur l'origine des produits.
+          </p>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+          <h3>Planification</h3>
+          <p>
+            Anticipation des récoltes et des besoins.
+            Organisation logistique optimisée.
+          </p>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+            </svg>
+          </div>
+          <h3>Contrats intelligents</h3>
+          <p>
+            Smart contracts pour sécuriser les transactions.
+            Paiements automatisés selon les conditions définies.
+          </p>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="17 8 12 3 7 8"/>
+              <line x1="12" y1="3" x2="12" y2="15"/>
+            </svg>
+          </div>
+          <h3>Données marché</h3>
+          <p>
+            Statistiques et analyses du marché.
+            Aide à la décision pour tous les acteurs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="section-badge">Bénéfices</span>
+        <h2>Les avantages pour chaque acteur</h2>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-block" data-aos="fade-up" data-aos-delay="100">
+          <div class="benefit-header">
+            <span class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </span>
+            <h3>Pour les producteurs</h3>
+          </div>
+          <ul class="benefit-list">
+            <li>Accès à de nouveaux marchés</li>
+            <li>Visibilité sur les prix</li>
+            <li>Revenus plus stables</li>
+            <li>Réduction des pertes</li>
+            <li>Paiements sécurisés</li>
+          </ul>
+        </div>
+
+        <div class="benefit-block" data-aos="fade-up" data-aos-delay="200">
+          <div class="benefit-header">
+            <span class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="6" width="20" height="12" rx="2"/>
+                <path d="M12 12h.01"/>
+              </svg>
+            </span>
+            <h3>Pour les transformateurs</h3>
+          </div>
+          <ul class="benefit-list">
+            <li>Approvisionnement régulier</li>
+            <li>Qualité garantie</li>
+            <li>Traçabilité complète</li>
+            <li>Planification facilitée</li>
+            <li>Coûts optimisés</li>
+          </ul>
+        </div>
+
+        <div class="benefit-block" data-aos="fade-up" data-aos-delay="300">
+          <div class="benefit-header">
+            <span class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+              </svg>
+            </span>
+            <h3>Pour les acheteurs</h3>
+          </div>
+          <ul class="benefit-list">
+            <li>Large choix de produits</li>
+            <li>Origine vérifiée</li>
+            <li>Prix compétitifs</li>
+            <li>Livraison organisée</li>
+            <li>Confiance renforcée</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roadmap Section -->
+  <section class="section bg-gradient section-roadmap">
+    <div class="container">
+      <div class="section-title text-white" data-aos="fade-up">
+        <span class="section-badge section-badge-light">Calendrier</span>
+        <h2>Feuille de route</h2>
+      </div>
+
+      <div class="roadmap">
+        <div class="roadmap-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="roadmap-marker roadmap-done">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <div class="roadmap-content">
+            <span class="roadmap-date">2024</span>
+            <h4>Conception</h4>
+            <p>Étude de marché, définition des fonctionnalités, architecture technique.</p>
+          </div>
+        </div>
+
+        <div class="roadmap-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="roadmap-marker roadmap-current">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <div class="roadmap-content">
+            <span class="roadmap-date">Q1-Q2 2025</span>
+            <h4>Développement</h4>
+            <p>Développement de la plateforme, intégration blockchain, tests.</p>
+          </div>
+        </div>
+
+        <div class="roadmap-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="roadmap-marker">
+            <span>3</span>
+          </div>
+          <div class="roadmap-content">
+            <span class="roadmap-date">Q3 2025</span>
+            <h4>Pilote</h4>
+            <p>Lancement pilote avec un groupe restreint de producteurs et acheteurs.</p>
+          </div>
+        </div>
+
+        <div class="roadmap-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="roadmap-marker">
+            <span>4</span>
+          </div>
+          <div class="roadmap-content">
+            <span class="roadmap-date">Q4 2025</span>
+            <h4>Lancement</h4>
+            <p>Ouverture de la plateforme au public, déploiement national.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-box" data-aos="fade-up">
+        <h2>Intéressé par la Bourse du Plantain ?</h2>
+        <p>
+          Vous souhaitez être informé du lancement ou participer au programme pilote ?
+          Laissez-nous vos coordonnées.
+        </p>
+        <div class="cta-buttons">
+          <a href="/contact?subject=bourse-plantain" class="btn btn-primary btn-lg">Être informé du lancement</a>
+          <a href="/contact?subject=pilote-bourse" class="btn btn-secondary btn-lg">Rejoindre le pilote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</BaseLayout>
+
+<style>
+  /* Page Hero Special */
+  .page-hero-special {
+    padding: calc(100px + var(--spacing-4xl)) 0 var(--spacing-4xl);
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 50%, var(--color-secondary) 100%);
+    color: var(--color-white);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .page-hero-special::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .page-hero-special .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .page-badge {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-md);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .page-hero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-white);
+  }
+
+  .page-hero p {
+    font-size: var(--text-xl);
+    opacity: 0.9;
+  }
+
+  .hero-badge-coming {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md) var(--spacing-xl);
+    background: var(--color-accent);
+    color: var(--color-gray-900);
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    margin-top: var(--spacing-xl);
+  }
+
+  .hero-badge-coming svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Section Badge */
+  .section-badge {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-md);
+    background: rgba(76, 175, 80, 0.1);
+    color: var(--color-primary);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .section-badge-light {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--color-white);
+  }
+
+  /* Vision Grid */
+  .vision-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+  }
+
+  @media (min-width: 992px) {
+    .vision-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .vision-content h2 {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .vision-content p {
+    color: var(--color-gray-600);
+    line-height: 1.8;
+  }
+
+  /* Vision Diagram */
+  .vision-diagram {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .diagram-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: var(--text-sm);
+    box-shadow: var(--shadow-xl);
+    z-index: 2;
+  }
+
+  .diagram-node {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+  }
+
+  .diagram-node svg {
+    width: 24px;
+    height: 24px;
+    color: var(--color-primary);
+    margin-bottom: 4px;
+  }
+
+  .diagram-node span {
+    font-size: 9px;
+    font-weight: 600;
+    color: var(--color-gray-700);
+  }
+
+  .node-1 { top: 0; left: 50%; transform: translateX(-50%); }
+  .node-2 { top: 50%; right: 0; transform: translateY(-50%); }
+  .node-3 { bottom: 0; left: 50%; transform: translateX(-50%); }
+  .node-4 { top: 50%; left: 0; transform: translateY(-50%); }
+
+  /* Features Grid */
+  .features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  @media (min-width: 576px) {
+    .features-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 992px) {
+    .features-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .feature-card {
+    background: var(--color-white);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+  }
+
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    border-radius: var(--radius-md);
+    color: var(--color-white);
+  }
+
+  .feature-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .feature-card h3 {
+    font-size: var(--text-lg);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .feature-card p {
+    color: var(--color-gray-600);
+    font-size: var(--text-sm);
+    margin: 0;
+  }
+
+  /* Benefits Grid */
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  @media (min-width: 768px) {
+    .benefits-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .benefit-block {
+    background: var(--color-white);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+  }
+
+  .benefit-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: var(--color-white);
+  }
+
+  .benefit-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-md);
+  }
+
+  .benefit-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .benefit-header h3 {
+    font-size: var(--text-lg);
+    color: var(--color-white);
+    margin: 0;
+  }
+
+  .benefit-list {
+    list-style: none;
+    padding: var(--spacing-lg);
+    margin: 0;
+  }
+
+  .benefit-list li {
+    position: relative;
+    padding-left: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-gray-700);
+  }
+
+  .benefit-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: 700;
+  }
+
+  /* Roadmap Section */
+  .section-roadmap .section-title h2 {
+    color: var(--color-white);
+  }
+
+  .roadmap {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 768px) {
+    .roadmap {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .roadmap-item {
+    text-align: center;
+  }
+
+  .roadmap-marker {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto var(--spacing-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    color: var(--color-white);
+    font-weight: 700;
+    font-family: var(--font-secondary);
+  }
+
+  .roadmap-marker svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .roadmap-done {
+    background: var(--color-accent);
+    color: var(--color-gray-900);
+  }
+
+  .roadmap-current {
+    background: var(--color-white);
+    color: var(--color-primary);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3);
+  }
+
+  .roadmap-content {
+    color: var(--color-white);
+  }
+
+  .roadmap-date {
+    font-size: var(--text-xs);
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .roadmap-content h4 {
+    color: var(--color-white);
+    font-size: var(--text-base);
+    margin: var(--spacing-sm) 0;
+  }
+
+  .roadmap-content p {
+    font-size: var(--text-sm);
+    opacity: 0.9;
+    margin: 0;
+  }
+
+  /* CTA Box */
+  .cta-box {
+    background: var(--color-off-white);
+    padding: var(--spacing-3xl);
+    border-radius: var(--radius-xl);
+    text-align: center;
+  }
+
+  .cta-box h2 {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .cta-box > p {
+    color: var(--color-gray-600);
+    max-width: 600px;
+    margin: 0 auto var(--spacing-xl);
+  }
+
+  .cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-md);
+  }
+</style>

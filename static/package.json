@@ -1,0 +1,36 @@
+{
+  "name": "kftm-green-website",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Site vitrine KFTM Green SARL - Agro-industrie Cameroun",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "eslint src --ext .js,.astro",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.1.1",
+    "aos": "^2.3.4",
+    "astro": "^4.5.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.5.6",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0",
+    "typescript": "^5.4.2"
+  },
+  "keywords": [
+    "kftm-green",
+    "cameroun",
+    "plantain",
+    "agro-industrie",
+    "banane-plantain"
+  ],
+  "author": "KFTM Green SARL",
+  "license": "UNLICENSED"
+}

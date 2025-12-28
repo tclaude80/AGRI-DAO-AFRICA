@@ -1,0 +1,167 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Mentions Légales"
+  description="Mentions légales du site KFTM Green SARL. Informations sur l'éditeur, l'hébergeur et les conditions d'utilisation."
+>
+  <Header slot="header" currentPath="/mentions-legales" />
+
+  <section class="page-hero-simple">
+    <div class="container">
+      <h1>Mentions Légales</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="legal-content">
+        <article>
+          <h2>1. Éditeur du site</h2>
+          <p>Le présent site est édité par :</p>
+          <ul>
+            <li><strong>Raison sociale :</strong> KFTM Green SARL</li>
+            <li><strong>Forme juridique :</strong> Société à Responsabilité Limitée</li>
+            <li><strong>Siège social :</strong> Kribi, Cameroun</li>
+            <li><strong>Téléphone :</strong> +237 654 39 74 50</li>
+            <li><strong>Email :</strong> infos@kftmgreen.cm</li>
+            <li><strong>Directeur de la publication :</strong> M. AWONO Landry Gaëtan</li>
+          </ul>
+        </article>
+
+        <article>
+          <h2>2. Hébergement</h2>
+          <p>Le site est hébergé par :</p>
+          <p>[Informations de l'hébergeur à compléter lors de la mise en ligne]</p>
+        </article>
+
+        <article>
+          <h2>3. Propriété intellectuelle</h2>
+          <p>
+            L'ensemble du contenu du site (textes, images, vidéos, logos, marques,
+            graphismes, etc.) est la propriété exclusive de KFTM Green SARL ou de
+            ses partenaires et est protégé par les lois relatives à la propriété
+            intellectuelle.
+          </p>
+          <p>
+            Toute reproduction, représentation, modification, publication, transmission
+            ou dénaturation, totale ou partielle, du site ou de son contenu, par quelque
+            procédé que ce soit et sur quelque support que ce soit, est interdite sans
+            l'autorisation écrite préalable de KFTM Green SARL.
+          </p>
+        </article>
+
+        <article>
+          <h2>4. Responsabilité</h2>
+          <p>
+            KFTM Green SARL s'efforce de fournir sur le site des informations aussi
+            précises que possible. Toutefois, la société ne pourra être tenue responsable
+            des omissions, des inexactitudes ou des carences dans la mise à jour.
+          </p>
+          <p>
+            KFTM Green SARL décline toute responsabilité en cas de difficultés techniques,
+            notamment liées à l'accès au réseau internet ou aux serveurs.
+          </p>
+        </article>
+
+        <article>
+          <h2>5. Liens hypertextes</h2>
+          <p>
+            Le site peut contenir des liens vers d'autres sites. KFTM Green SARL
+            n'exerce aucun contrôle sur ces sites et décline toute responsabilité
+            quant à leur contenu.
+          </p>
+        </article>
+
+        <article>
+          <h2>6. Cookies</h2>
+          <p>
+            Le site peut utiliser des cookies pour améliorer l'expérience utilisateur.
+            Pour plus d'informations, consultez notre
+            <a href="/politique-confidentialite">Politique de confidentialité</a>.
+          </p>
+        </article>
+
+        <article>
+          <h2>7. Droit applicable</h2>
+          <p>
+            Le présent site et ses mentions légales sont régis par le droit camerounais.
+            En cas de litige, les tribunaux camerounais seront seuls compétents.
+          </p>
+        </article>
+
+        <article>
+          <h2>8. Contact</h2>
+          <p>
+            Pour toute question concernant ces mentions légales, vous pouvez nous
+            contacter à l'adresse suivante : <a href="mailto:infos@kftmgreen.cm">infos@kftmgreen.cm</a>
+          </p>
+        </article>
+
+        <p class="legal-update">Dernière mise à jour : Décembre 2024</p>
+      </div>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</BaseLayout>
+
+<style>
+  .page-hero-simple {
+    padding: calc(100px + var(--spacing-2xl)) 0 var(--spacing-2xl);
+    background: var(--color-off-white);
+  }
+
+  .page-hero-simple h1 {
+    font-size: var(--text-3xl);
+    color: var(--color-gray-900);
+  }
+
+  .legal-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .legal-content article {
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  .legal-content h2 {
+    font-size: var(--text-xl);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-gray-900);
+  }
+
+  .legal-content p {
+    color: var(--color-gray-600);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .legal-content ul {
+    margin: var(--spacing-md) 0;
+    padding-left: var(--spacing-xl);
+    color: var(--color-gray-600);
+  }
+
+  .legal-content ul li {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .legal-content a {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+
+  .legal-update {
+    font-style: italic;
+    color: var(--color-gray-500);
+    font-size: var(--text-sm);
+    margin-top: var(--spacing-2xl);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--color-gray-200);
+  }
+</style>
