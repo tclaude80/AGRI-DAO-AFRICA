@@ -1,0 +1,69 @@
+# ============================================
+# Commandes SFTP manuelles pour OVH
+# ============================================
+#
+# Connexion:
+#   sftp -P 22 kftmgreedt@ssh.cluster042.hosting.ovh.net
+#
+# Puis exécutez ces commandes une par une:
+
+cd /home/kftmgreedt/www
+
+# Créer les dossiers
+mkdir a-propos
+mkdir assets
+mkdir bourse-plantain
+mkdir contact
+mkdir durabilite
+mkdir export
+mkdir filiere
+mkdir images
+mkdir mentions-legales
+mkdir politique-confidentialite
+mkdir process-qualite
+mkdir produits
+mkdir tracabilite
+
+# Uploader les fichiers (depuis le dossier static/dist local)
+lcd static/dist
+
+put .htaccess
+put .htpasswd
+put index.html
+put favicon.svg
+put robots.txt
+put site.webmanifest
+
+put -r assets
+put -r a-propos
+put -r bourse-plantain
+put -r contact
+put -r durabilite
+put -r export
+put -r filiere
+put -r images
+put -r mentions-legales
+put -r politique-confidentialite
+put -r process-qualite
+put -r produits
+put -r tracabilite
+
+bye
+
+# ============================================
+# Alternative avec rsync (plus rapide):
+# ============================================
+#
+# rsync -avz --progress --delete \
+#   -e "ssh -p 22" \
+#   static/dist/ \
+#   kftmgreedt@ssh.cluster042.hosting.ovh.net:/home/kftmgreedt/www/
+#
+# ============================================
+# Alternative avec lftp:
+# ============================================
+#
+# lftp -u kftmgreedt -p 22 sftp://ssh.cluster042.hosting.ovh.net << EOF
+# mirror --reverse --delete --verbose static/dist /home/kftmgreedt/www
+# bye
+# EOF
