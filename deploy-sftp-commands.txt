@@ -3,7 +3,7 @@
 # ============================================
 #
 # Connexion:
-#   sftp -P 22 kftmgreedt@ssh.cluster042.hosting.ovh.net
+#   sftp -P 22 kftmgreedt@ssh.cluster127.hosting.ovh.net
 #
 # Puis exécutez ces commandes une par une:
 
@@ -57,13 +57,13 @@ bye
 # rsync -avz --progress --delete \
 #   -e "ssh -p 22" \
 #   static/dist/ \
-#   kftmgreedt@ssh.cluster042.hosting.ovh.net:/home/kftmgreedt/www/
+#   kftmgreedt@ssh.cluster127.hosting.ovh.net:/home/kftmgreedt/www/
 #
 # ============================================
 # Alternative avec lftp:
 # ============================================
 #
-# lftp -u kftmgreedt -p 22 sftp://ssh.cluster042.hosting.ovh.net << EOF
+# lftp -u kftmgreedt -p 22 sftp://ssh.cluster127.hosting.ovh.net << EOF
 # mirror --reverse --delete --verbose static/dist /home/kftmgreedt/www
 # bye
 # EOF

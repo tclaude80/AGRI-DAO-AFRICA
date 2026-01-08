@@ -5,7 +5,7 @@
 # ============================================
 
 # Configuration
-SFTP_HOST="ssh.cluster042.hosting.ovh.net"
+SFTP_HOST="ssh.cluster127.hosting.ovh.net"
 SFTP_PORT="22"
 SFTP_USER="kftmgreedt"
 REMOTE_PATH="/home/kftmgreedt/www"
