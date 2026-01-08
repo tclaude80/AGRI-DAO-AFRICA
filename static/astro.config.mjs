@@ -1,10 +1,9 @@
 import { defineConfig } from 'astro/config';
-import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://kftmgreen.cm',
-  integrations: [sitemap()],
+  integrations: [],
   build: {
     assets: 'assets',
     inlineStylesheets: 'auto'
