@@ -37,6 +37,17 @@ import Footer from '../components/Footer.astro';
           <span class="certif"><span class="certif-icon">&#10003;</span> Sans Conservateurs</span>
           <span class="certif"><span class="certif-icon">&#10003;</span> Made in Cameroon</span>
         </div>
+
+        <!-- Certification ANOR -->
+        <div class="anor-certification" data-aos="fade-up" data-aos-delay="200">
+          <div class="anor-badge">
+            <img src="/images/certifications/anor-logo.png" alt="ANOR - Agence des Normes et de la Qualité" onerror="this.style.display='none'">
+            <div class="anor-text">
+              <strong>Certifié ANOR</strong>
+              <span>Agence des Normes et de la Qualité du Cameroun</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -47,12 +58,16 @@ import Footer from '../components/Footer.astro';
       <div class="product-detail">
         <div class="product-images" data-aos="fade-right">
           <div class="main-image">
-            <img src="/images/farine-mere-anto.jpg" alt="Farine de banane plantain Mère Anto KFTM Green 1kg" loading="lazy">
+            <img src="/images/produits/farine-mere-anto-1kg.jpg" alt="Farine de banane plantain Mère Anto KFTM Green 1kg" loading="lazy">
           </div>
           <div class="product-badges-detail">
             <span class="badge badge-green">Sans Gluten</span>
-            <span class="badge badge-gold">Premium</span>
+            <span class="badge badge-gold">Certifié ANOR</span>
             <span class="badge badge-primary">1 kg</span>
+          </div>
+          <div class="product-gallery">
+            <img src="/images/produits/farine-poudre.jpg" alt="Farine de plantain en poudre" loading="lazy">
+            <img src="/images/produits/farine-biscuits-formes.jpg" alt="Biscuits réalisés avec la farine Mère Anto" loading="lazy">
           </div>
         </div>
 
@@ -110,6 +125,38 @@ import Footer from '../components/Footer.astro';
             </div>
           </div>
 
+          <!-- Valeurs Nutritionnelles -->
+          <div class="nutrition-facts">
+            <h4>Déclarations Nutritionnelles (pour 100g)</h4>
+            <div class="nutrition-grid">
+              <div class="nutrition-item">
+                <span class="nutrition-value">437 kJ</span>
+                <span class="nutrition-label">Énergie</span>
+              </div>
+              <div class="nutrition-item">
+                <span class="nutrition-value">105 g</span>
+                <span class="nutrition-label">Glucides</span>
+              </div>
+              <div class="nutrition-item">
+                <span class="nutrition-value">0.35 g</span>
+                <span class="nutrition-label">Matières grasses</span>
+              </div>
+              <div class="nutrition-item">
+                <span class="nutrition-value">5 g</span>
+                <span class="nutrition-label">Fibres</span>
+              </div>
+              <div class="nutrition-item">
+                <span class="nutrition-value">5 g</span>
+                <span class="nutrition-label">Protéines</span>
+              </div>
+              <div class="nutrition-item">
+                <span class="nutrition-value">0 g</span>
+                <span class="nutrition-label">Gluten</span>
+              </div>
+            </div>
+            <p class="composition"><strong>Composition :</strong> 100% Plantain - Humidité: 7.2%/10.7% - Cendres: 2.1%/2.7%</p>
+          </div>
+
           <div class="usage-section">
             <h4>Utilisations recommandées</h4>
             <ul class="usage-list">
@@ -135,10 +182,11 @@ import Footer from '../components/Footer.astro';
       <div class="product-detail product-detail-reverse">
         <div class="product-images" data-aos="fade-left">
           <div class="main-image">
-            <img src="/images/croquant-plantain.jpg" alt="Croquant de Plantain biscuit nature KFTM Green 500g" loading="lazy">
+            <img src="/images/produits/croquant-nature-500g.jpg" alt="Croquant de Plantain biscuit nature KFTM Green 500g" loading="lazy">
           </div>
           <div class="product-badges-detail">
-            <span class="badge badge-green">Artisanal</span>
+            <span class="badge badge-green">Sans Colorants</span>
+            <span class="badge badge-gold">Sans Conservateurs</span>
             <span class="badge badge-primary">500 g</span>
           </div>
         </div>
@@ -217,11 +265,11 @@ import Footer from '../components/Footer.astro';
       <div class="product-detail">
         <div class="product-images" data-aos="fade-right">
           <div class="main-image">
-            <img src="/images/croquant-choco.jpg" alt="Croquant de Plantain Choco biscuit chocolat KFTM Green 500g" loading="lazy">
+            <img src="/images/produits/croquant-choco-500g.jpg" alt="Croquant de Plantain Choco biscuit chocolat KFTM Green 500g" loading="lazy">
           </div>
           <div class="product-badges-detail">
             <span class="badge badge-brown">Chocolat</span>
-            <span class="badge badge-green">Nouveau</span>
+            <span class="badge badge-green">Sans Colorants</span>
             <span class="badge badge-primary">500 g</span>
           </div>
         </div>
@@ -744,5 +792,123 @@ import Footer from '../components/Footer.astro';
   .cta-buttons .btn-secondary:hover {
     background: var(--color-white);
     color: var(--color-primary);
+  }
+
+  /* ANOR Certification */
+  .anor-certification {
+    margin-top: var(--spacing-xl);
+  }
+
+  .anor-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-xl);
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+  }
+
+  .anor-badge img {
+    width: 60px;
+    height: auto;
+  }
+
+  .anor-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .anor-text strong {
+    color: var(--color-primary-dark);
+    font-size: var(--text-lg);
+  }
+
+  .anor-text span {
+    color: var(--color-gray-600);
+    font-size: var(--text-sm);
+  }
+
+  /* Product Gallery */
+  .product-gallery {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+  }
+
+  .product-gallery img {
+    flex: 1;
+    width: calc(50% - var(--spacing-sm));
+    height: 120px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    cursor: pointer;
+    transition: transform var(--transition-base);
+  }
+
+  .product-gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Nutrition Facts */
+  .nutrition-facts {
+    background: linear-gradient(135deg, var(--color-off-white) 0%, #fff 100%);
+    border: 1px solid var(--color-gray-200);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .nutrition-facts h4 {
+    font-size: var(--text-base);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-primary-dark);
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: var(--spacing-sm);
+  }
+
+  .nutrition-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+  }
+
+  @media (min-width: 576px) {
+    .nutrition-grid {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+
+  .nutrition-item {
+    text-align: center;
+    padding: var(--spacing-sm);
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .nutrition-value {
+    display: block;
+    font-size: var(--text-lg);
+    font-weight: 700;
+    color: var(--color-primary);
+  }
+
+  .nutrition-label {
+    display: block;
+    font-size: var(--text-xs);
+    color: var(--color-gray-600);
+    margin-top: 2px;
+  }
+
+  .composition {
+    font-size: var(--text-sm);
+    color: var(--color-gray-600);
+    margin: 0;
+    padding-top: var(--spacing-sm);
+    border-top: 1px dashed var(--color-gray-300);
   }
 </style>
