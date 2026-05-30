@@ -48,6 +48,18 @@ import Footer from '../components/Footer.astro';
             </div>
           </div>
         </div>
+
+        <!-- Download Catalog Button -->
+        <div class="catalog-download" data-aos="fade-up" data-aos-delay="300">
+          <a href="/documents/catalogue-produits-kftm.pdf" class="btn btn-primary btn-lg" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Télécharger le Catalogue Produits (PDF)
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -76,11 +88,19 @@ import Footer from '../components/Footer.astro';
           <h2>Farine de Banane Plantain<br><span class="brand-highlight">"Mère Anto"</span></h2>
 
           <p class="product-description">
-            Notre farine de banane plantain <strong>"Mère Anto"</strong> est le produit phare
-            de KFTM Green. Élaborée à partir de bananes plantains soigneusement sélectionnées
-            et transformées selon un processus rigoureux, elle offre une alternative nutritive
-            et sans gluten aux farines traditionnelles.
+            Poudre fine essentiellement à base de banane-plantain, facile à digérer.
+            Se consomme seule en couscous ou fufu, ou en mélange avec d'autres farines
+            pour réaliser des pâtisseries exquises : pain, crêpes, gâteaux et différentes
+            préparations sucrées et salées. Sa texture en fait un accompagnement en garnitures
+            savoureuses pour égayer vos plats de viande, poisson et légume. Sert à épaissir
+            les sauces, crèmes, smoothies...
           </p>
+
+          <div class="health-benefits">
+            <span class="health-tag">Recommandée aux personnes allergiques au gluten</span>
+            <span class="health-tag">Idéale en cas de surpoids</span>
+            <span class="health-tag">Adaptée aux diabétiques</span>
+          </div>
 
           <div class="product-highlights">
             <div class="highlight">
@@ -142,7 +162,7 @@ import Footer from '../components/Footer.astro';
                 <span class="nutrition-label">Matières grasses</span>
               </div>
               <div class="nutrition-item">
-                <span class="nutrition-value">5 g</span>
+                <span class="nutrition-value">3 g</span>
                 <span class="nutrition-label">Fibres</span>
               </div>
               <div class="nutrition-item">
@@ -154,7 +174,7 @@ import Footer from '../components/Footer.astro';
                 <span class="nutrition-label">Gluten</span>
               </div>
             </div>
-            <p class="composition"><strong>Composition :</strong> 100% Plantain - Humidité: 7.2%/10.7% - Cendres: 2.1%/2.7%</p>
+            <p class="composition"><strong>Composition :</strong> 100% Plantain - Humidité: 10.7%/7.2% - Cendres: 2.2%/2.1%</p>
           </div>
 
           <div class="usage-section">
@@ -196,10 +216,15 @@ import Footer from '../components/Footer.astro';
           <h2>Croquant de Plantain<br><span class="brand-highlight">Biscuit Nature</span></h2>
 
           <p class="product-description">
-            Nos biscuits <strong>"Croquant de Plantain"</strong> sont une délicieuse façon
-            de profiter des bienfaits de la banane plantain. Croquants et savoureux, ils
-            constituent un snack sain pour toute la famille.
+            Biscuit original à base de farine de plantain, idéal pour tous les âges en goûter,
+            apéritif ou snack accompagné d'un thé, d'un café ou d'un yaourt.
+            Le «Croquant de plantain» est un délice pour les papilles gustatives.
           </p>
+
+          <div class="product-formats">
+            <span class="format-tag">Disponible en 500 g</span>
+            <span class="format-tag">Disponible en 100 g</span>
+          </div>
 
           <div class="product-highlights">
             <div class="highlight">
@@ -238,6 +263,38 @@ import Footer from '../components/Footer.astro';
                 <p>Saveur authentique du plantain</p>
               </div>
             </div>
+          </div>
+
+          <!-- Valeurs Nutritionnelles Croquant Nature -->
+          <div class="nutrition-facts">
+            <h4>Déclarations Nutritionnelles (pour 100g)</h4>
+            <div class="nutrition-grid">
+              <div class="nutrition-item">
+                <span class="nutrition-value">1279,8 kJ</span>
+                <span class="nutrition-label">Énergie</span>
+              </div>
+              <div class="nutrition-item">
+                <span class="nutrition-value">73,5 g</span>
+                <span class="nutrition-label">Glucides</span>
+              </div>
+              <div class="nutrition-item">
+                <span class="nutrition-value">15 g</span>
+                <span class="nutrition-label">Matières grasses</span>
+              </div>
+              <div class="nutrition-item">
+                <span class="nutrition-value">2,1 g</span>
+                <span class="nutrition-label">Fibres</span>
+              </div>
+              <div class="nutrition-item">
+                <span class="nutrition-value">8 g</span>
+                <span class="nutrition-label">Protéines</span>
+              </div>
+              <div class="nutrition-item">
+                <span class="nutrition-value">3%</span>
+                <span class="nutrition-label">Humidité</span>
+              </div>
+            </div>
+            <p class="composition"><strong>Ingrédients :</strong> Farine de Banane plantain, Farine de Blé T65, Sucre, Beurre, Œuf, Lait, Levure, Aromes.</p>
           </div>
 
           <div class="usage-section">
@@ -279,10 +336,16 @@ import Footer from '../components/Footer.astro';
           <h2>Croquant de Plantain<br><span class="brand-highlight">Choco</span></h2>
 
           <p class="product-description">
-            La gourmandise rencontre la nutrition ! Nos biscuits <strong>"Croquant de Plantain Choco"</strong>
-            combinent la richesse de la farine de plantain avec l'irrésistible saveur du cacao,
-            pour un plaisir sain et gourmand.
+            Biscuit original à base de farine de plantain, idéal pour tous les âges en goûter,
+            apéritif ou snack accompagné d'un thé, d'un café ou d'un yaourt.
+            Le «Croquant de plantain Choco» est un délice pour les papilles gustatives,
+            alliant la richesse du plantain avec l'irrésistible saveur du cacao.
           </p>
+
+          <div class="product-formats">
+            <span class="format-tag">Disponible en 500 g</span>
+            <span class="format-tag">Disponible en 100 g</span>
+          </div>
 
           <div class="product-highlights">
             <div class="highlight">
@@ -328,6 +391,38 @@ import Footer from '../components/Footer.astro';
                 <p>Dernière création de notre gamme</p>
               </div>
             </div>
+          </div>
+
+          <!-- Valeurs Nutritionnelles Croquant Choco -->
+          <div class="nutrition-facts">
+            <h4>Déclarations Nutritionnelles (pour 100g)</h4>
+            <div class="nutrition-grid">
+              <div class="nutrition-item">
+                <span class="nutrition-value">1279,8 kJ</span>
+                <span class="nutrition-label">Énergie</span>
+              </div>
+              <div class="nutrition-item">
+                <span class="nutrition-value">73,5 g</span>
+                <span class="nutrition-label">Glucides</span>
+              </div>
+              <div class="nutrition-item">
+                <span class="nutrition-value">15 g</span>
+                <span class="nutrition-label">Matières grasses</span>
+              </div>
+              <div class="nutrition-item">
+                <span class="nutrition-value">2,1 g</span>
+                <span class="nutrition-label">Fibres</span>
+              </div>
+              <div class="nutrition-item">
+                <span class="nutrition-value">8 g</span>
+                <span class="nutrition-label">Protéines</span>
+              </div>
+              <div class="nutrition-item">
+                <span class="nutrition-value">3%</span>
+                <span class="nutrition-label">Humidité</span>
+              </div>
+            </div>
+            <p class="composition"><strong>Ingrédients :</strong> Farine de Banane plantain, Farine de Blé T65, Sucre, Beurre, Œuf, Lait, Levure, Aromes, Poudre de cacao.</p>
           </div>
 
           <div class="usage-section">
@@ -910,5 +1005,64 @@ import Footer from '../components/Footer.astro';
     margin: 0;
     padding-top: var(--spacing-sm);
     border-top: 1px dashed var(--color-gray-300);
+  }
+
+  /* Health Benefits Tags */
+  .health-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .health-tag {
+    display: inline-block;
+    padding: 6px 14px;
+    background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(139, 195, 74, 0.15));
+    border: 1px solid var(--color-primary-light);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    color: var(--color-primary-dark);
+    font-weight: 500;
+  }
+
+  /* Product Formats */
+  .product-formats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .format-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: var(--color-gray-900);
+    color: var(--color-white);
+    border-radius: var(--radius-md);
+    font-size: var(--text-sm);
+    font-weight: 600;
+  }
+
+  .format-tag::before {
+    content: '📦';
+    font-size: var(--text-base);
+  }
+
+  /* Catalog Download */
+  .catalog-download {
+    margin-top: var(--spacing-xl);
+  }
+
+  .catalog-download .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+  }
+
+  .catalog-download .btn svg {
+    flex-shrink: 0;
   }
 </style>
